@@ -3,4 +3,8 @@ project(ListaEnlazadaSimple C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(ListaEnlazadaSimple main.c)
+add_executable(ListaEnlazadaSimple main.c
+        tElemento.c
+        tElemento.h
+        tLista.c
+        tLista.h)
