@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.30"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ListaEnlazadaConPunteroFinal",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ListaEnlazadaConPunteroFinal::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ListaEnlazadaConPunteroFinal-Debug-0e22b5cc421ccd69fad1.json",
+					"name" : "ListaEnlazadaConPunteroFinal",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/EstructurasDeDatos/Listas/ListaEnlazadaConPunteroFinal/cmake-build-debug",
+		"source" : "D:/EstructurasDeDatos/Listas/ListaEnlazadaConPunteroFinal"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

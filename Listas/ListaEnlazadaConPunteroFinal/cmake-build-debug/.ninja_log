@@ -1,0 +1,8 @@
+# ninja log v6
+16	279	7624643035978924	build.ninja	99e6e74d295f6c14
+16	269	7624643036637177	CMakeFiles/ListaEnlazadaConPunteroFinal.dir/main.c.obj	83c84b49743c4573
+19	277	7624643036677063	CMakeFiles/ListaEnlazadaConPunteroFinal.dir/tElemento.c.obj	19d99648da0e939a
+2	164	7624681014332146	CMakeFiles/ListaEnlazadaConPunteroFinal.dir/tLista.c.obj	2be00416bf5abbab
+164	514	7624681015952102	ListaEnlazadaConPunteroFinal.exe	28d9284d2910b6ed
+8	52	7624681234084215	CMakeFiles/ListaEnlazadaConPunteroFinal.dir/main.c.obj	83c84b49743c4573
+52	108	7624681234523314	ListaEnlazadaConPunteroFinal.exe	28d9284d2910b6ed
