@@ -1,3 +1,7 @@
 # ninja log v6
-1	47	7623998335722907	CMakeFiles/ListaEstatica.dir/main.c.obj	3558bdfffa150df5
+2	311	7624359203157232	CMakeFiles/ListaEstatica.dir/main.c.obj	3558bdfffa150df5
+2	50	7624360882343426	CMakeFiles/ListaEstatica.dir/tLista.c.obj	b1e16b9f5d0ae907
 47	142	7623998336194064	ListaEstatica.exe	8206a89ce6c738ab
+12	200	7624361669372658	build.ninja	42718a8a9dfb3798
+13	55	7624361669864068	CMakeFiles/ListaEstatica.dir/tElemento.c.obj	b6f1914dcea2273
+55	110	7624361670292913	ListaEstatica.exe	87cb40c3b93537fb

@@ -3,4 +3,6 @@ project(ListaEstatica C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(ListaEstatica main.c)
+add_executable(ListaEstatica main.c
+        tLista.c
+        tLista.h tElemento.c)
