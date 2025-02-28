@@ -1,0 +1,17 @@
+# ninja log v6
+20	109	7624683502257803	CMakeFiles/ListaDoblementeEnlazada.dir/tElemento.c.obj	614aac4618e0dc60
+1	262	7624684015210889	build.ninja	f9d632953a6b6fe6
+18	103	7624683502247834	CMakeFiles/ListaDoblementeEnlazada.dir/main.c.obj	84724d94fad63101
+7	200	7624684015210889	build.ninja	f9d632953a6b6fe6
+12	58	7624684015709559	CMakeFiles/ListaDoblementeEnlazada.dir/tLista.c.obj	a600ee9184298a2a
+58	113	7624684016168330	ListaDoblementeEnlazada.exe	9b88b122e8a7299a
+13	57	7624694710701583	CMakeFiles/ListaDoblementeEnlazada.dir/main.c.obj	84724d94fad63101
+15	61	7624694710721531	CMakeFiles/ListaDoblementeEnlazada.dir/tLista.c.obj	a600ee9184298a2a
+61	116	7624694711181114	ListaDoblementeEnlazada.exe	9b88b122e8a7299a
+13	59	7624700403989632	CMakeFiles/ListaDoblementeEnlazada.dir/tLista.c.obj	a600ee9184298a2a
+60	115	7624700404468360	ListaDoblementeEnlazada.exe	9b88b122e8a7299a
+2	45	7624701531562164	CMakeFiles/ListaDoblementeEnlazada.dir/main.c.obj	84724d94fad63101
+45	100	7624701531996425	ListaDoblementeEnlazada.exe	9b88b122e8a7299a
+14	59	7624702523426049	CMakeFiles/ListaDoblementeEnlazada.dir/main.c.obj	84724d94fad63101
+17	62	7624702523445992	CMakeFiles/ListaDoblementeEnlazada.dir/tLista.c.obj	a600ee9184298a2a
+62	118	7624702523904759	ListaDoblementeEnlazada.exe	9b88b122e8a7299a
