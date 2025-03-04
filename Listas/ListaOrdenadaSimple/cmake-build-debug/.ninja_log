@@ -1,0 +1,9 @@
+# ninja log v6
+2	253	7628100053272809	build.ninja	cbc3ebf32125e139
+2	47	7628097262062356	CMakeFiles/ListaOrdenadaSimple.dir/main.c.obj	35db3c83c8a2a6e8
+20	79	7628095447036390	CMakeFiles/ListaOrdenadaSimple.dir/tElemento.c.obj	dd7be6dadfa428e0
+48	102	7628097393501998	ListaOrdenadaSimple.exe	3d7fd7d02786a697
+2	48	7628097393043218	CMakeFiles/ListaOrdenadaSimple.dir/tLista.c.obj	3c70f70791faf8e6
+14	59	7628107466590443	CMakeFiles/ListaOrdenadaSimple.dir/main.c.obj	35db3c83c8a2a6e8
+16	66	7628107466620414	CMakeFiles/ListaOrdenadaSimple.dir/tLista.c.obj	3c70f70791faf8e6
+66	188	7628107467109168	ListaOrdenadaSimple.exe	3d7fd7d02786a697

@@ -1,0 +1,3 @@
+D:/EstructurasDeDatos/Listas/ListaOrdenadaSimple/cmake-build-debug/CMakeFiles/ListaOrdenadaSimple.dir
+D:/EstructurasDeDatos/Listas/ListaOrdenadaSimple/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/EstructurasDeDatos/Listas/ListaOrdenadaSimple/cmake-build-debug/CMakeFiles/rebuild_cache.dir
