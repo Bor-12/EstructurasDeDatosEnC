@@ -1,0 +1,3 @@
+D:/EstructurasDeDatos/Pila/PilaDinamica/cmake-build-debug/CMakeFiles/PilaDinamica.dir
+D:/EstructurasDeDatos/Pila/PilaDinamica/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/EstructurasDeDatos/Pila/PilaDinamica/cmake-build-debug/CMakeFiles/rebuild_cache.dir

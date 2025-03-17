@@ -1,0 +1,7 @@
+# ninja log v6
+5	60	7639353850550982	CMakeFiles/PilaDinamica.dir/tElemento.c.obj	a6dcac1ecf96727a
+10	97	7639354122944878	CMakeFiles/PilaDinamica.dir/main.c.obj	9276355ba01aac9a
+7	109	7639354465949460	CMakeFiles/PilaDinamica.dir/Pila.c.obj	bffb8b498f6e7381
+109	205	7639354466965769	PilaDinamica.exe	8d809bdb57b4d31e
+8	54	7639354820754582	CMakeFiles/PilaDinamica.dir/main.c.obj	9276355ba01aac9a
+55	115	7639354821221579	PilaDinamica.exe	8d809bdb57b4d31e
