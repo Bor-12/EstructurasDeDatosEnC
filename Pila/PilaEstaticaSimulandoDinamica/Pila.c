@@ -7,7 +7,7 @@
 #include <stdio.h>
 
 #include "stdlib.h"
-//O(DIM ^ 2)
+//O(DIM)
 void crearPilaVacia(tPila* pila) {
     for (int i = 0; i < DIMENSION; i++){
         pila -> almacen[i].siguiente = i + 1;

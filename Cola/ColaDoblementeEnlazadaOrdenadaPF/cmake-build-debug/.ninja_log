@@ -1,0 +1,16 @@
+# ninja log v6
+15	560	7642952481207178	build.ninja	f2a15295bf5a5e73
+2	52	7642950372821360	CMakeFiles/ColaDoblementeEnlazadaOrdenadaPF.dir/Cola.c.obj	3608320fff2c7a89
+2	54	7642948514689456	CMakeFiles/ColaDoblementeEnlazadaOrdenadaPF.dir/main.c.obj	5b3ca2b43f2a7e59
+20	149	7642935543178870	CMakeFiles/ColaDoblementeEnlazadaOrdenadaPF.dir/tElemento.c.obj	44e99a05edc029a1
+79	140	7642950373581080	ColaDoblementeEnlazadaOrdenadaPF.exe	50e93408c8c4511d
+2	79	7642957398644738	CMakeFiles/ColaDoblementeEnlazadaOrdenadaPF.dir/Cola.c.obj	3608320fff2c7a89
+79	135	7642957399417587	ColaDoblementeEnlazadaOrdenadaPF.exe	50e93408c8c4511d
+9	58	7642957759398509	CMakeFiles/ColaDoblementeEnlazadaOrdenadaPF.dir/Cola.c.obj	3608320fff2c7a89
+58	114	7642957759895157	ColaDoblementeEnlazadaOrdenadaPF.exe	50e93408c8c4511d
+7	57	7642957876665572	CMakeFiles/ColaDoblementeEnlazadaOrdenadaPF.dir/Cola.c.obj	3608320fff2c7a89
+57	113	7642957877168947	ColaDoblementeEnlazadaOrdenadaPF.exe	50e93408c8c4511d
+8	58	7642958609698138	CMakeFiles/ColaDoblementeEnlazadaOrdenadaPF.dir/Cola.c.obj	3608320fff2c7a89
+58	113	7642958610191007	ColaDoblementeEnlazadaOrdenadaPF.exe	50e93408c8c4511d
+2	51	7642959265681535	CMakeFiles/ColaDoblementeEnlazadaOrdenadaPF.dir/Cola.c.obj	3608320fff2c7a89
+52	106	7642959266178770	ColaDoblementeEnlazadaOrdenadaPF.exe	50e93408c8c4511d
