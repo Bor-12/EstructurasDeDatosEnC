@@ -1,0 +1,3 @@
+D:/EstructurasDeDatos/Pila/PilaEstaticaSimulandoDinamica/cmake-build-debug/CMakeFiles/PilaEstaticaSimulandoDinamica.dir
+D:/EstructurasDeDatos/Pila/PilaEstaticaSimulandoDinamica/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/EstructurasDeDatos/Pila/PilaEstaticaSimulandoDinamica/cmake-build-debug/CMakeFiles/rebuild_cache.dir

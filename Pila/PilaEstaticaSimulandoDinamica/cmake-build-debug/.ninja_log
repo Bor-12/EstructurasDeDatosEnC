@@ -1,0 +1,13 @@
+# ninja log v6
+1	279	7639914315745487	build.ninja	fd1ba97d6c1a0968
+20	74	7639911030701317	CMakeFiles/PilaEstaticaSimulandoDinamica.dir/tElemento.c.obj	e5edaf3de4c5613
+17	75	7639911030671406	CMakeFiles/PilaEstaticaSimulandoDinamica.dir/main.c.obj	b68d0a898a7cac61
+19	79	7639911030681378	CMakeFiles/PilaEstaticaSimulandoDinamica.dir/Pila.c.obj	ccd981b39ac16108
+79	173	7639911031289755	PilaEstaticaSimulandoDinamica.exe	5fab16bae1280def
+28	524	7640787342202186	CMakeFiles/PilaEstaticaSimulandoDinamica.dir/main.c.obj	b68d0a898a7cac61
+33	545	7642928324558153	CMakeFiles/PilaEstaticaSimulandoDinamica.dir/Pila.c.obj	ccd981b39ac16108
+546	1001	7642928329680936	PilaEstaticaSimulandoDinamica.exe	5fab16bae1280def
+12	64	7642929234767144	CMakeFiles/PilaEstaticaSimulandoDinamica.dir/Pila.c.obj	ccd981b39ac16108
+88	145	7642929235525678	PilaEstaticaSimulandoDinamica.exe	5fab16bae1280def
+13	66	7642929957118152	CMakeFiles/PilaEstaticaSimulandoDinamica.dir/Pila.c.obj	ccd981b39ac16108
+66	121	7642929957643906	PilaEstaticaSimulandoDinamica.exe	5fab16bae1280def
