@@ -1,0 +1,3 @@
+D:/EstructurasDeDatos/Cola/ColaCircular/cmake-build-debug/CMakeFiles/ColaCircular.dir
+D:/EstructurasDeDatos/Cola/ColaCircular/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/EstructurasDeDatos/Cola/ColaCircular/cmake-build-debug/CMakeFiles/rebuild_cache.dir
