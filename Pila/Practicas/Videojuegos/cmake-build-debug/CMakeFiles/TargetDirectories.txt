@@ -1,0 +1,3 @@
+D:/EstructurasDeDatos/Pila/Practicas/Videojuegos/cmake-build-debug/CMakeFiles/Videojuegos.dir
+D:/EstructurasDeDatos/Pila/Practicas/Videojuegos/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/EstructurasDeDatos/Pila/Practicas/Videojuegos/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,8 @@
+# ninja log v6
+1	228	7644355530194917	build.ninja	c7204228b0949f6d
+13	63	7644355297181293	CMakeFiles/Videojuegos.dir/main.c.obj	67b6cd00f2dbcd29
+15	66	7644355297211208	CMakeFiles/Videojuegos.dir/Pila.c.obj	cbd8387b61061bb1
+17	66	7644355297221174	CMakeFiles/Videojuegos.dir/tElemento.c.obj	4d13a5b4445401f8
+66	130	7644355297719843	Videojuegos.exe	22baec552de68ed5
+8	692	7644355729714477	CMakeFiles/Videojuegos.dir/main.c.obj	67b6cd00f2dbcd29
+693	757	7644355736570021	Videojuegos.exe	22baec552de68ed5

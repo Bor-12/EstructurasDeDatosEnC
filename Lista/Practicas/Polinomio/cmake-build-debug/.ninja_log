@@ -1,0 +1,12 @@
+# ninja log v6
+1	46	7644321267629358	CMakeFiles/Polinomio.dir/main.c.obj	9f5ce56a692ca05d
+6	55	7644321267679223	CMakeFiles/Polinomio.dir/tLista.c.obj	e3522c586a1c51ee
+3	89	7644321267659281	CMakeFiles/Polinomio.dir/tElemento.c.obj	1af6725453b41f31
+8	91	7644321267699171	CMakeFiles/Polinomio.dir/tPolinomio.c.obj	d7d25d1b561dd1b2
+91	154	7644321268527326	Polinomio.exe	371737165c9f7166
+9	77	7644321760283547	CMakeFiles/Polinomio.dir/main.c.obj	9f5ce56a692ca05d
+77	142	7644321760962414	Polinomio.exe	371737165c9f7166
+7	59	7644322420351733	CMakeFiles/Polinomio.dir/tPolinomio.c.obj	d7d25d1b561dd1b2
+60	123	7644322420869035	Polinomio.exe	371737165c9f7166
+2	53	7644325057956175	CMakeFiles/Polinomio.dir/tPolinomio.c.obj	d7d25d1b561dd1b2
+76	140	7644325058688592	Polinomio.exe	371737165c9f7166

@@ -1,0 +1,3 @@
+D:/EstructurasDeDatos/Lista/Practicas/Polinomio/cmake-build-debug/CMakeFiles/Polinomio.dir
+D:/EstructurasDeDatos/Lista/Practicas/Polinomio/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/EstructurasDeDatos/Lista/Practicas/Polinomio/cmake-build-debug/CMakeFiles/rebuild_cache.dir
