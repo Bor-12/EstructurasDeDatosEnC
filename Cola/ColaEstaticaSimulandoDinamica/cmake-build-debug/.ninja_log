@@ -1,0 +1,14 @@
+# ninja log v6
+1	136	7647274833326649	CMakeFiles/ColaEstatica.dir/main.c.obj	492455994bfc5413
+15	75	7647277892100387	CMakeFiles/ColaEstatica.dir/Cola.c.obj	4dca355f5cec4649
+76	150	7647277892708761	ColaEstatica.exe	d2410754583e351b
+1	200	7647278886784404	build.ninja	66b1d467aa51e073
+17	70	7647277892120341	CMakeFiles/ColaEstatica.dir/tElemento.c.obj	58fa56c405ff16c
+9	59	7647278927778325	CMakeFiles/ColaEstatica.dir/main.c.obj	411c496d23881bb7
+13	63	7647278927818216	CMakeFiles/ColaEstatica.dir/tElemento.c.obj	53183ba215d3edbc
+11	71	7647278927798268	CMakeFiles/ColaEstatica.dir/Cola.c.obj	958c0fb5e2e88bcf
+71	134	7647278928396665	ColaEstatica.exe	d2410754583e351b
+2	54	7647290317089949	CMakeFiles/ColaEstatica.dir/main.c.obj	411c496d23881bb7
+5	90	7647290317119866	CMakeFiles/ColaEstatica.dir/Cola.c.obj	958c0fb5e2e88bcf
+14	70	7647293934574135	CMakeFiles/ColaEstatica.dir/Cola.c.obj	958c0fb5e2e88bcf
+73	138	7647293935165024	ColaEstatica.exe	d2410754583e351b
