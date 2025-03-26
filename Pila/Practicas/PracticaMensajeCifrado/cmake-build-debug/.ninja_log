@@ -1,0 +1,21 @@
+# ninja log v6
+13	87	7644289034095221	CMakeFiles/PracticaMensajeCifrado.dir/main.c.obj	3f4a32e8da065d9
+7	223	7644289221963182	build.ninja	b323ca5c36693c79
+17	76	7644285017521224	CMakeFiles/PracticaMensajeCifrado.dir/elemento.c.obj	dc38c37a0512c17c
+15	86	7644289034115164	CMakeFiles/PracticaMensajeCifrado.dir/Pila.c.obj	3386e978ef72715
+17	87	7644289034135454	CMakeFiles/PracticaMensajeCifrado.dir/tLista.c.obj	1bd653e2b6d9c4e4
+11	208	7644289221963182	build.ninja	b323ca5c36693c79
+2	54	7644289551527580	CMakeFiles/PracticaMensajeCifrado.dir/main.c.obj	3f4a32e8da065d9
+15	60	7644289747738832	CMakeFiles/PracticaMensajeCifrado.dir/tElemento.c.obj	dc250512b40cf407
+13	68	7644289747708902	CMakeFiles/PracticaMensajeCifrado.dir/main.c.obj	3f4a32e8da065d9
+15	93	7644290010951571	CMakeFiles/PracticaMensajeCifrado.dir/Pila.c.obj	3386e978ef72715
+13	93	7644290010931630	CMakeFiles/PracticaMensajeCifrado.dir/tElemento.c.obj	dc250512b40cf407
+17	102	7644290010971510	CMakeFiles/PracticaMensajeCifrado.dir/tLista.c.obj	1bd653e2b6d9c4e4
+11	102	7644290010911678	CMakeFiles/PracticaMensajeCifrado.dir/main.c.obj	3f4a32e8da065d9
+15	65	7644291825419793	CMakeFiles/PracticaMensajeCifrado.dir/tElemento.c.obj	dc250512b40cf407
+19	71	7644291825449723	CMakeFiles/PracticaMensajeCifrado.dir/tLista.c.obj	1bd653e2b6d9c4e4
+17	74	7644291825439748	CMakeFiles/PracticaMensajeCifrado.dir/Pila.c.obj	3386e978ef72715
+13	76	7644291825389873	CMakeFiles/PracticaMensajeCifrado.dir/main.c.obj	3f4a32e8da065d9
+76	137	7644291826018191	PracticaMensajeCifrado.exe	5797d4198fdce102
+14	67	7644297341381396	CMakeFiles/PracticaMensajeCifrado.dir/main.c.obj	3f4a32e8da065d9
+67	127	7644297341913923	PracticaMensajeCifrado.exe	5797d4198fdce102

@@ -66,5 +66,12 @@ void mostrarCola(tCola* cola) {
             mostrarElemento(aux->elemento);
             aux = aux->siguiente;
         } while (aux != (*cola)->siguiente);
+        printf("Circular \n");
+    }
+}
+void hacerBucleInfinito(tCola *cola) {
+    while (*cola != NULL) {
+        mostrarElemento((*cola) -> elemento);
+        *cola = (*cola) -> siguiente;
     }
 }

@@ -1,0 +1,6 @@
+# ninja log v6
+15	81	7632280647239707	CMakeFiles/ListaEstaticaSimulandoDinamica.dir/main.c.obj	d24e2083a38777d3
+81	150	7632280647893692	ListaEstaticaSimulandoDinamica.exe	2d527a913fc5471e
+8	214	7632285191097405	build.ninja	5dc783a93160b002
+12	98	7628972716974555	CMakeFiles/ListaEstaticaSimulandoDinamica.dir/tElemento.c.obj	c44f64d0e64d960b
+12	65	7628999732580112	CMakeFiles/ListaEstaticaSimulandoDinamica.dir/tLista.c.obj	c5fda2e80aeb2a98

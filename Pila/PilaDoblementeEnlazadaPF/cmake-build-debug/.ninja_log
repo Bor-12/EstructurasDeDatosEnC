@@ -1,0 +1,11 @@
+# ninja log v6
+1	229	7644407106889690	build.ninja	2af84755ee27ecaf
+16	66	7644349353017223	CMakeFiles/PilaDoblementeEnlazadaPF.dir/main.c.obj	6aa11d0bc690ca3d
+59	119	7644349525168103	PilaDoblementeEnlazadaPF.exe	9cd9f49efa6a8e12
+18	68	7644349353037169	CMakeFiles/PilaDoblementeEnlazadaPF.dir/tElemento.c.obj	b714b5314005d3fd
+8	59	7644349524659460	CMakeFiles/PilaDoblementeEnlazadaPF.dir/Pila.c.obj	fbb76140c07be26d
+13	262	7644407287219581	CMakeFiles/PilaDoblementeEnlazadaPF.dir/Pila.c.obj	fbb76140c07be26d
+262	567	7644407289719412	PilaDoblementeEnlazadaPF.exe	9cd9f49efa6a8e12
+111	573	7647145761987390	CMakeFiles/PilaDoblementeEnlazadaPF.dir/Pila.c.obj	fbb76140c07be26d
+36	573	7647145761225393	CMakeFiles/PilaDoblementeEnlazadaPF.dir/main.c.obj	6aa11d0bc690ca3d
+575	1082	7647145766622718	PilaDoblementeEnlazadaPF.exe	9cd9f49efa6a8e12

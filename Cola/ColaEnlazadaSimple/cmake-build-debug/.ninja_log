@@ -1,0 +1,6 @@
+# ninja log v6
+1	219	7644406765241726	build.ninja	fab38d0e8323fc83
+7	77	7644375885141859	CMakeFiles/ColaEnlazadaSimple.dir/main.c.obj	734482e1f28780a9
+19	76	7644371391150729	CMakeFiles/ColaEnlazadaSimple.dir/tElemento.c.obj	53a1dd4ef5d081dd
+64	124	7644376218181857	ColaEnlazadaSimple.exe	f8cb17b893623b8c
+12	64	7644376217671965	CMakeFiles/ColaEnlazadaSimple.dir/Cola.c.obj	624152bdea0eb895

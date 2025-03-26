@@ -3,7 +3,7 @@
 //
 
 #ifndef COLA_H
-#define COLA_H
+#define COLA_Ha
 #include "tElemento.h"
 typedef struct Nodo {
     struct Nodo *siguiente;
@@ -19,4 +19,5 @@ void desencolar(tCola* cola);
 int esColaVacia(tCola* cola);
 int longitudCola(tCola* cola);
 void mostrarCola(tCola* cola);
+void hacerBucleInfinito(tCola *cola);
 #endif //COLA_H

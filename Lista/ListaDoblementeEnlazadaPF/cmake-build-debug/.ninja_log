@@ -1,0 +1,10 @@
+# ninja log v6
+2	248	7647158767068845	build.ninja	935b318f36d5da78
+14	58	7624739324116926	CMakeFiles/ListaDoblementeEnlazadaPF.dir/main.c.obj	253296b245ed353d
+61	116	7624739324579761	ListaDoblementeEnlazadaPF.exe	4613c4598ddd3f52
+27	73	7624709048051868	CMakeFiles/ListaDoblementeEnlazadaPF.dir/tElemento.c.obj	e326f71b8d09c2f5
+16	61	7624739324136879	CMakeFiles/ListaDoblementeEnlazadaPF.dir/tLista.c.obj	92c890066eff6116
+15	76	7647163963299401	CMakeFiles/ListaDoblementeEnlazadaPF.dir/main.c.obj	4a31d61fd4843dee
+19	89	7647163963349667	CMakeFiles/ListaDoblementeEnlazadaPF.dir/tElemento.c.obj	b3d420c95b6871cc
+18	94	7647163963329698	CMakeFiles/ListaDoblementeEnlazadaPF.dir/tLista.c.obj	ff7e2fc626078d81
+94	154	7647163964089753	ListaDoblementeEnlazadaPF.exe	4613c4598ddd3f52
