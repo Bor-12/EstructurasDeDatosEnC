@@ -1,0 +1,13 @@
+# ninja log v6
+14	160	7650535271841832	CMakeFiles/estatico.dir/main.c.obj	54452c67b543e60b
+161	432	7650535273307222	estatico.exe	3d2bbc43373f3bb2
+5	99	7650555662693232	CMakeFiles/estatico.dir/tElemento.c.obj	72aef190606ff73f
+2	100	7650555662663320	CMakeFiles/estatico.dir/main.c.obj	54452c67b543e60b
+7	104	7650555662713179	CMakeFiles/estatico.dir/Conjunto.c.obj	b6e7568cc3761b55
+104	175	7650555663681260	estatico.exe	56dae9f09da51bd8
+2	50	7650556105489757	CMakeFiles/estatico.dir/main.c.obj	54452c67b543e60b
+50	111	7650556105969218	estatico.exe	56dae9f09da51bd8
+2	49	7650556211361602	CMakeFiles/estatico.dir/main.c.obj	54452c67b543e60b
+49	110	7650556211840309	estatico.exe	56dae9f09da51bd8
+2	49	7650558115672137	CMakeFiles/estatico.dir/main.c.obj	54452c67b543e60b
+52	112	7650558116160828	estatico.exe	56dae9f09da51bd8
