@@ -23,6 +23,9 @@ int pertenece(tConjunto conjunto, tElemento elem) {
 }
 
 void insertar(tConjunto *conjunto, tElemento elem) {
+    if (pertenece(*conjunto, elem)) {
+        return;
+    }
     tNodo *nuevoNodo = (tNodo *) malloc(sizeof(tNodo));
     asignarElemento(&nuevoNodo -> elemento, elem);
     nuevoNodo -> siguiente = *conjunto;

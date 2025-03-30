@@ -1,0 +1,6 @@
+# ninja log v6
+1	217	7649672423183894	build.ninja	448d0aabc695a752
+8	57	7647177384482140	CMakeFiles/ListaCircular.dir/main.c.obj	ad9a56507c424fe8
+13	61	7647178133785734	CMakeFiles/ListaCircular.dir/tLista.c.obj	988acee031ef8ecb
+18	68	7647165380364724	CMakeFiles/ListaCircular.dir/tElemento.c.obj	4a2164f3a7e4e5a6
+62	121	7647178134269262	ListaCircular.exe	5898b6d8ec60de1a

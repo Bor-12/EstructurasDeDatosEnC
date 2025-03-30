@@ -1,0 +1,63 @@
+Dada la siguiente definición de tipos para implementar una cola circular:
+typedef struct Nodo{
+tElemento info;
+struct Nodo *sig;
+}TNodo;
+typedef TNodo *tColaCircular;
+ Se pide implementar una operación que reciba un número entero n y muestre por
+pantalla el cuadrado latino para dicho número. Por ejemplo, para n = 4, se
+mostraría:
+1 2 3 4
+2 3 4 1
+3 4 1 2
+4 1 2 3
+Considerar que la operación CuadradoLatino se define fuera del TAD TColaCircular.
+Se deberán implementar todas las operaciones que se utilicen del TAD
+TColaCircular.
+typedef int TElmento;
+void crearElemento(TElmento *e, int n){
+	*e = n;
+}
+void asignarElemento(TElemento *e, tElemento e2){
+	*e = e2;
+}
+void crearColaVacia(TColaCircular *cola){
+	*cola = NULL;
+}
+void mostrarElmento(TElemento e){
+	printf("%d ", e);
+}
+void insertarCola(TColaCircular *cola, tElemento e){
+	TNodo *nuevoNodo = (TNodo *) malloc(sizeof(TNodo));
+	asignarElemento(&nuevoNodo -> info, e);
+	if(*cola == NULL){
+		nuevoNodo -> sig = nuevoNodo;
+	}else{
+		nuevoNodo -> sig = (*cola ) -> sig;
+		(*cola) -> sig = nuevoNodo;
+	}
+	*cola = nuevoNodo;
+}
+void mostrarCola(TColaCircular cola){
+	if (cola == NULL) return;
+	TNodo aux = cola -> sig;
+	do{
+		mostrarElmento(aux -> info);
+		aux = aux -> sig;
+	}while(aux != cola -> sig);
+		
+}
+void cuadradoLatino(int n){
+	TColaCircular cola;
+	crearColaVacia(&cola);
+	for(int i = 1; i <= n; i++){
+		tElemento e; 
+		crearElemento(&e, i);
+		insertarCola(&cola, e);	
+	}
+
+	for (int i = 1; i <= n; i++) {
+    		mostrarCola(cola);
+    		cola = cola->sig;  // Rotar la cola
+	}
+}

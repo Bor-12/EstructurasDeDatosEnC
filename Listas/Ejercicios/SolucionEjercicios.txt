@@ -1,0 +1,419 @@
+1)Escribir un procedimiento de búsqueda de un elemento en
+una lista no ordenada y en una ordenada, que devuelva un
+puntero a la posición que ocupa el elemento si está. Sino
+está devuelve NULL.
+
+lista no ordenada y no ordenada por ejemplo:
+typedef struct Nodo{
+	struct Nodo *siguiente;
+	struct Nodo *anterior;
+	tElemento elemento;
+}tNodo;
+typedef  struct Lista{
+	tNodo *principio;
+	tNodo *final;
+	int tamano;
+}
+tNodo *busquedaElemento(tLista lista, elemento){
+	tNodo *aux = lista.principio;
+	while aux != NULL && !esIgual(aux-> elemento, elemento){
+		aux = aux -> siguiente;
+	}
+	return aux;
+}
+2)Sean X e Y dos cadenas de caracteres representadas
+mediante listas enlazadas. Escribir un procedimiento que
+encuentre el primer carácter de X que no se encuentra en la
+cadena Y. (Supóngase que cada nodo de las listas almacena
+un único carácter)
+lista por ejemplo:
+typedef struct Nodo{
+	struct Nodo *siguiente;
+	char caracter
+}tNodo;
+typedef tNodo *tLista;
+tNodo *buscarPrimerCaracter(tLista lista1, tLista lista2) {
+    tNodo *resultado = NULL;
+
+    while (lista1 != NULL && resultado == NULL) {
+        tNodo *aux = lista2;
+        int encontrado = 0;
+
+        while (aux != NULL && !encontrado) {
+            encontrado = (aux->caracter == lista1->caracter);
+            aux = aux->siguiente;
+        }
+
+        if (!encontrado) { 
+            resultado = lista1;
+        }
+
+        lista1 = lista1->siguiente;
+    }
+
+    return resultado;
+}
+ejercicio 3:
+Supóngase una lista estática que simula memoria dinámica capaz de almacenar hasta 10 elementos de tipo entero.
+Supóngase un estado inicial (diagrama superior) y el siguiente estado (diagrama inferior) al que se llega tras aplicar una operación sobre la lista.
+
+ESTADO INICIAL
+pos		1	2	3	4	5	6	7	8	9	10
+Elemento	2	3	4	5	6	7	8	9	10	11
+Siguiente	7	5	6	1	3	8	10	0 	2	0
+cabLibres: 9
+cabOcupados: 4
+
+ESTADO FINAL
+pos		1	2	3	4	5	6	7	8	9	10
+Elemento	2	3	4	5	6	7	8	9	10	11
+Siguiente	7	5	6	9	3	8	10	0	2	0
+cabLibres: 4
+cabOcupados: 1
+
+Pregunta:
+a)(0.5 puntos) ¿Qué operación se ha aplicado para pasar de un estado al siguiente? Justifique su respuesta con precisión.
+En el estado inicial, la lista tenía cuatro celdas ocupadas y una cabecera de libres en la posición 9. En el estado final, la cantidad de celdas ocupadas se ha reducido a 1 y la cabecera de libres ha pasado a ser 4.
+
+Al analizar la columna "Siguiente", observamos que el valor en la posición 4 ha cambiado. Inicialmente, en "Siguiente" de la posición 4 se encontraba el valor 1, pero en el estado final ha cambiado a 9. Esto indica que la celda en la 
+posición 4 ha sido liberada y ahora apunta a la antigua cabeza de la lista de libres.
+
+Esto sugiere que la operación aplicada ha sido una eliminación de un elemento en la posición 4. Cuando se elimina un elemento en una lista enlazada, su posición pasa a formar 
+parte de la lista de espacios libres, y su puntero "Siguiente" se ajusta para apuntar al antiguo cabLibres.
+
+Por lo tanto, la operación aplicada es una eliminación de un elemento en la posición 4, haciendo que esta posición ahora forme parte de la lista de espacios libres.
+
+
+b) (1 punto)
+Codifique la operación que logra pasar de un estado a otro y que pueda aplicarse de forma general a cualquier estado de la lista estática que simula memoria dinámica.
+DIMENSION = 100;
+typedef struct Nodo{
+	tElemento elemento;
+	int siguiente;
+	int anterior;
+}tNodo;
+typedef struct Lista{
+	tNodo[DIMENSION] almacen;
+	int primeraPosicionLibre;
+	int primeraPosicionOcupada;
+}tLista;
+
+void eliminarElemento(tLista *lista, tElemento elemento){
+	
+	int posicion = lista -> primeraPosicionOcupada;
+	while(posicion != -1 && !esIgual(lista -> almacen[posicion].elemento, elemento)){
+		posicion = lista -> almacen[posicion].siguiente;
+	}
+	if (posicion != -1){
+		int anterior = lista->almacen[posicion].anterior;
+    		int siguiente = lista->almacen[posicion].siguiente;
+
+		// Si el nodo a eliminar es el primero de la lista ocupada
+    		if (posicion == lista->primeraPosicionOcupada) {
+        		lista->primeraPosicionOcupada = siguiente;
+    		}
+
+    		// Ajustar los punteros de los nodos vecinos
+    		if (anterior != -1) {
+        		lista->almacen[anterior].siguiente = siguiente;
+   		}
+    		if (siguiente != -1) {
+        		lista->almacen[siguiente].anterior = anterior;
+    		}
+
+    		// Agregar la posición eliminada a la lista de libres
+    		lista->almacen[posicion].siguiente = lista->primeraPosicionLibre;
+    		lista->primeraPosicionLibre = posicion;
+	}
+}
+
+
+EJERCICIO 4 : Especifica algebraicamente la operación entremezclar, que
+dadas dos listas devuelve otra con los elementos de las dos de
+entrada intercalados.
+Ecuacion constructora no generadora 
+entremezclar: tipoLista x tipoLista -> tipoLista
+OPERACIONES
+VARIABLES
+TipoLista l, l2 , tipoElemento e, e2
+entreMezclar(crearListaVacia, crearListaVacia) = crearListaVacia
+entreMezclar(crearListaVacia, insertar(l, e)) = insertar(l, e)
+entreMezclar(insertar(l, e), crearListaVacia) = insertar(l, e)
+entreMezclar(insertar(l, e), insertar(l2, e2)) = insertar(insertar(entreMezclar(l,l2),e2), e)
+factorizando:
+entreMezclar (crearListaVacia, l) = l
+entreMezclar(insertar(l, e), insertar(l2, e2)) = insertar(insertar(entreMezclar(l,l2),e2), e)
+
+EJERCICIO 5:
+Dadas las siguientes ecuaciones que forman parte de una
+especificación algebraica, se pide:
+ Misterio(Construir(e, estructura), e1) = Construir(e1, estructura)
+a) Explicar qué hace la operación Misterio.
+elimina el ultimo elemento insertado que es e , y lo remplaza por e1 que es el segundo operandode la funcion misterio
+b) Implementar la operación Misterio. La complejidad de la
+implementación debe ser O(1)
+void misterio(tLista *lista, tElemento e){
+	//supongo que no es vacia y esta inicializada  
+    	asignarElemento(&(*lista) -> elemento, e);
+}
+EJERCICIO 6
+Consideremos la operación Posfijo que tiene la declaración siguiente:
+
+Posfijo: TipoLista x TipoElemento -> TipoLista
+
+que a partir de la lista nos devuelve la sublista que hay a partir del elemento. Si el elemento no existe, nos devolverá la lista vacía. Ejemplos:
+
+
+Posfijo([2,4,5,6,8],5) = [6,8]
+Posfijo([2,4,5,6,8],2) = [4,5,6,8]
+Posfijo([2,4,5,6,8],9) = []
+Se pide:
+
+a) Especificación algebraica de dicha operación.
+OPERACIONES
+VARIABLES
+TipoLista l , TipoElemento e, e1
+posfijo(listaVacia, e) = listaVacia
+posfijo(insertar(l, e), e1) = Si e = e1 -> l | posfijo(l, e1)
+b) Implementación en Pascal de dicha operación a partir de las operaciones del TAD TipoLista visto en clase.
+lista enlazada simple
+void posfijo(tLista *lista, tElemento e) {
+    tNodo *actual = *lista;
+    tNodo *aux;  
+
+    // Recorrer la lista hasta encontrar 'e', liberando memoria de los nodos anteriores
+    while (actual != NULL && !esIgual(actual->elemento, e)) {
+        aux = actual;  
+        actual = actual->siguiente;  
+        free(aux);  
+    }
+    //una vez mas para el elemento
+    if (aux != NULL){
+	aux = actual;  
+        actual = actual->siguiente;  
+        free(aux);  	
+    }
+    *lista = actual;
+}
+ERJERCICO 7
+
+Dada la siguiente estructura de lista estática simulando dinámica doblemente enlazada con cursor cabecera:
+
+┌──────┬───────┬──────┬──────┬──────┬──────
+│  1   │   2   │  3   │  4   │  5   │  6   │     
+├──────┼───────┼──────┼──────┼──────┼──────┼
+│ Ana  │ Pedro │ Juan │ Eva  │ Luis │ Carlos 
+├──────┼───────┼──────┼──────┼──────┼──────┼
+│ 2| 3   5 | 4   2| 6   2 | 0  0| 2    2 |0
+└──────┴───────┴──────┴──────┴──────┴──────┴
+cabLista: 5
+cabLibres: 1
+
+
+
+Escribir en una línea los valores numéricos de los enlaces en los nodos y en la siguiente línea los valores de las variables cabLista y 
+cabLibres tras eliminar el elemento de la cabecera de la lista (no implementar).
+luis -> ana -> Juan 
+EJERCICIO 8
+
+Consideremos la operación Prefijo que tiene la declaración
+siguiente:
+Prefijo: TipoLista x TipoElemento -> TipoLista
+Esta operación dada una lista y un elemento, nos devuelve la
+sublista de elementos que hay desde el comienzo de la lista
+hasta el elemento dado sin incluir. Si el elemento no existe, nos
+devolverá la lista original completa. Ejemplos:
+Prefijo([2,4,5,6,7,9],5) = [2,4]
+ Prefijo([2,4,5,6,7,9],2) = []
+Prefijo([2,4,5,6,7,9],10) = [2,4,5,6,7,9]
+Se pide la especificación algebraica para dicha operación.
+Prefijo(listaVacia ,e) = listaVacia
+Prefijo (insertar(l, e), e1) = si e = e1 -> l | costruir(Prefijo(l, e1), e)
+
+EJERCICIO 9
+Dada una lista definida de la siguiente forma:
+
+ typedef struct Nodo {
+    int e;                 // Campo para almacenar el entero
+    struct Nodo *sig;// Puntero al siguiente nodo
+} TNodo;
+
+typedef TNodo* TLista;  
+
+Se pide implementar una operación que reciba una lista del tipo anterior y un
+número entero N > 0, y devuelva una variable de TLista cuya cabecera contenga la
+suma de los N primeros elementos de la lista original.
+Si por ejemplo, se tiene la lista L de la siguiente figura y N = 3 , se devolverá la
+variable S.
+TNodo * suma(TLista lista,int n){
+	int contador = 0;
+	int suma = 0;
+	while(lista != NULL && contador != n){
+		suma += lista -> e;
+		contador++;
+		lista = lista -> sig;
+	}
+	// Crear un nuevo nodo con la suma
+    	TNodo* resultado = (TNodo*)malloc(sizeof(TNodo));
+	resultado->e = suma;
+    	resultado->sig = NULL;  
+	return resultado;
+}
+EJERCICIO 10 :
+10. Implementar una solución recursiva para las siguientes
+operaciones: 
+
+int LongitudRec (tLista l);
+void borrarRecursivo(tLista *l, tElemento elem);
+void Postfijo(tLista li, tElemento elem, tLista *lp);
+
+int LongitudRec (tLista l){
+	if(esListaVacia(l)){
+		return 0;
+	}
+	return 1 + LongitudRec(l -> siguiente);
+}
+void borrarRecursivo(tLista *l, tElemento elem) {
+    if (*l == NULL) {  // Si la lista está vacía, salir
+        return;
+    }
+
+    if (esIgual((*l)->elemento, elem)) {  
+        tNodo *temp = *l;  /
+        *l = (*l)->siguiente;  
+        free(temp);  
+        
+    } else {
+        borrarRecursivo(&(*l)->siguiente, elem);  
+    }
+}
+void Postfijo(tLista li, tElemento elem, tLista *lp) {
+    *lp = NULL; 
+
+    if (li == NULL) {
+        return;
+    }
+
+    if (esIgual(li->elemento, elem)) {
+        *lp = li->siguiente;  
+        return;  // Se detiene la recursión cuando encuentra el elemento
+    }
+
+    Postfijo(li->siguiente, elem, lp); 
+}
+
+EJERCICIO 11
+11. Escribir una función recursiva NumPos que calcule el
+número de elementos positivos que hay en una lista
+enlazada simple apuntada por el puntero Lista.
+(Considérese que el campo Elemento de cada nodo es
+de tipo int).
+int numeroElementosPositivos(tLista lista){
+	if (lista == NULL)
+		return 0;
+	
+	if(lista -> elemento >= 0)
+		return 1 + numeroElementosPositivos(lista -> siguiente);
+	return numeroElementosPositivos(lista -> siguiente);
+}
+EJERCICIO 12
+En la Universidad se reciben propuestas de proyectos para pedir
+una subvención para la realización de dicho proyecto. Cuando
+los proyectos llegan al servicio correspondiente, dichos
+proyectos se registran con un identificador formado por letras y
+números, el título del proyecto y el estado en el que se
+encuentra la propuesta. Este estado puede ser: E (En
+evaluación), A (Aceptado) 0 D (Denegado). Cuando se registra la
+petición de un nuevo proyecto se asigna el estado En
+evaluación. Ese estado se modifica posteriormente una vez
+decidida la concesión o no de la subvención.
+
+a. Definir los tipos de datos para representar dicha información
+mediante una lista ordenada por el identificador del
+proyecto.
+#define MAX 50
+typedef struct {
+	char estado;// 'E', 'A' o 'D'
+	char titulo[MAX];
+	char identificador[MAX];
+}tProyecto;
+typedef struct Nodo{
+	struct Nodo *siguiente;
+	struct Nodo *anterior;
+	tProyecto elemento;
+}tNodo;
+typedef struct{
+	tNodo *principio;
+	tNodo *final;
+}tLista;
+
+b. Implementar una operación que devuelva el estado de un
+proyecto dado el identificador. Si el proyecto no existe
+devolver el código de estado X.
+char obtenerEstadoProyecto(tLista lista, char *identificador){
+	tNodo *actual = lista.principio;
+
+    	while (actual != NULL) {
+        	if (strcmp(actual->elemento.identificador, identificador) == 0) {
+            	return actual->elemento.estado;
+        	}
+        	actual = actual->siguiente;
+    	}
+
+    	return 'X';  // Proyecto no encontrado
+}
+c. Implementar una operación que inserte un nuevo proyecto
+en la estructura. La operación recibirá la información relativa
+al proyecto en una variable TipoProyecto que contenga toda
+la información del mismo.
+void insertar(tLista *lista, tProyecto proyecto){
+	tNodo *nuevoNodo = (tNodo *) malloc(sizeof(tNodo));
+	asignarElemento(&nuevoNodo -> elemento, proyecto);
+	nuevoNodo -> siguiente = NULL;
+	nuevoNodo -> anterior = NULL;
+	if(lista -> principio == NULL){
+		lista -> principio = nuevoNodo;
+		lista -> final = nuevoNodo;
+		return;
+	}
+	tNodo *aux = lista -> principio;
+	while(aux != NULL && !mayorPrioridad(aux -> elemento, proyecto){
+		aux = aux -> siguiente;
+	} 
+	if (aux == NULL){
+		//FINAL DE LA LISTA
+		nuevoNodo -> anterior = lista -> final;
+		lista -> final -> siguiente = nuevoNodo;
+		lista -> final = nuevoNodo;
+	}else{
+		if(lista -> principio == aux){
+			nuevoNodo -> siguiente = lista -> principio;
+			lista -> principio -> anterior = nuevoNodo;
+			lista -> principio = nuevoNodo;
+		}else{
+			aux -> anterior -> siguiente = nuevoNodo;
+			nuevoNodo -> anterior = aux -> anterior;
+			aux -> anterior = nuevoNodo;
+			nuevoNodo -> siguiente = aux;
+		}
+	}
+}
+d. Implementar una operación que borre todos los proyectos
+de la estructura.
+void vaciarLista(tLista *lista) {
+    tNodo *actual = lista->principio;
+    tNodo *temp;
+
+    while (actual != NULL) {
+        temp = actual;
+        actual = actual->siguiente;
+        free(temp);
+    }
+
+    lista->principio = NULL;
+    lista->final = NULL;
+}
+
+
+
+
