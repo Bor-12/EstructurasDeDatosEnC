@@ -1,0 +1,14 @@
+# ninja log v6
+1	236	7650576926340620	build.ninja	ab53b89d33eea8c0
+26	78	7650560448218701	CMakeFiles/ConjuntoDinamico.dir/Conjunto.c.obj	b0b42f059c4ffe87
+16	76	7650560448128939	CMakeFiles/ConjuntoDinamico.dir/main.c.obj	ec36c2cd385bc203
+24	80	7650560448198760	CMakeFiles/ConjuntoDinamico.dir/tElemento.c.obj	dc337ed52b9cf5c1
+80	144	7650560448768826	ConjuntoDinamico.exe	69e9424e2854a325
+3	54	7650577249337305	CMakeFiles/ConjuntoDinamico.dir/main.c.obj	ec36c2cd385bc203
+5	64	7650577249357543	CMakeFiles/ConjuntoDinamico.dir/Conjunto.c.obj	b0b42f059c4ffe87
+64	124	7650577249954469	ConjuntoDinamico.exe	69e9424e2854a325
+9	61	7650612332698586	CMakeFiles/ConjuntoDinamico.dir/main.c.obj	ec36c2cd385bc203
+13	69	7650612332738498	CMakeFiles/ConjuntoDinamico.dir/Conjunto.c.obj	b0b42f059c4ffe87
+96	159	7650612333567570	ConjuntoDinamico.exe	69e9424e2854a325
+8	64	7650614759887606	CMakeFiles/ConjuntoDinamico.dir/Conjunto.c.obj	b0b42f059c4ffe87
+65	125	7650614760447337	ConjuntoDinamico.exe	69e9424e2854a325
