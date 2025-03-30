@@ -3,7 +3,8 @@
 //
 
 #include "Conjunto.h"
-
+#include <stdlib.h>
+#include <time.h>
 #include <complex.h>
 //O(1)
 void iniciarConjunto(tConjunto *conjunto) {
@@ -54,6 +55,31 @@ void mostrarConjunto(tConjunto conjunto) {
     for (int i = 0; i < conjunto.cardinal; i++) {
         mostrarElemento(conjunto.almacen[i]);
     }
+}
+//O(cardinal)
+void extraerElemento(tConjunto *conjunto, tElemento *elem) {
+    if (conjunto->cardinal == 0) {
+        *elem = elementoVacio();
+        return;
+    }
+
+    static time_t ultimaSemilla = 0;
+    time_t ahora = time(NULL);
+
+    // Solo volver a llamar a srand si ha pasado al menos 1 segundo
+    if (ahora != ultimaSemilla) {
+        srand(ahora);
+        ultimaSemilla = ahora;
+    }
+
+    int pos = rand() % conjunto->cardinal;
+    *elem = conjunto->almacen[pos];
+
+    for (int i = pos; i < conjunto->cardinal - 1; i++) {
+        conjunto->almacen[i] = conjunto->almacen[i + 1];
+    }
+
+    conjunto->cardinal--;
 }
 // O((cardinalA + cardinalB)^2) en el peor caso
 

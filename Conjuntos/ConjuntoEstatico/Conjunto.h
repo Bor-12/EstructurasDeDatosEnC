@@ -20,6 +20,7 @@ void insertar(tConjunto *conjunto, tElemento elem);
 void eliminar(tConjunto *conjunto, tElemento elem);
 int esVacio(tConjunto conjunto);
 void mostrarConjunto(tConjunto conjunto);
+void extraerElemento(tConjunto *conjunto, tElemento *elem);
 
 tConjunto unionConjuntos(tConjunto conjuntoA, tConjunto conjuntoB);
 tConjunto interseccion(tConjunto conjuntoA, tConjunto conjuntoB);
