@@ -21,10 +21,16 @@ void eliminar(tConjunto *conjunto, tElemento elem);
 int esVacio(tConjunto conjunto);
 void mostrarConjunto(tConjunto conjunto);
 void extraerElemento(tConjunto *conjunto, tElemento *elem);
-
+int esSubconjunto(tConjunto conjunto1, tConjunto conjunto2);
+int igualConjunto(tConjunto conjunto1, tConjunto conjunto2);
+void asignarConjunto(tConjunto *copia, tConjunto original);
+void destruirConjunto(tConjunto *conjunto);
 tConjunto unionConjuntos(tConjunto conjuntoA, tConjunto conjuntoB);
 tConjunto interseccion(tConjunto conjuntoA, tConjunto conjuntoB);
 tConjunto diferencia(tConjunto conjuntoA, tConjunto conjuntoB);
+
+
+
 
 #endif // CONJUNTO_H
 

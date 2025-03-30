@@ -73,7 +73,7 @@ void extraerElemento(tConjunto *conjunto, tElemento *elem) {
     }
 
     int pos = rand() % conjunto->cardinal;
-    *elem = conjunto->almacen[pos];
+    asignarElemento(elem, conjunto->almacen[pos]);
 
     for (int i = pos; i < conjunto->cardinal - 1; i++) {
         conjunto->almacen[i] = conjunto->almacen[i + 1];
@@ -81,6 +81,39 @@ void extraerElemento(tConjunto *conjunto, tElemento *elem) {
 
     conjunto->cardinal--;
 }
+
+// Devuelve 1 si todos los elementos de conjunto1 están en conjunto2
+//O(cardinal1 * cardinal2)
+int esSubconjunto(tConjunto conjunto1, tConjunto conjunto2) {
+    for (int i = 0; i < conjunto1.cardinal; i++) {//O(cardinal1)
+        if (!pertenece(conjunto2, conjunto1.almacen[i])) {//O(cardinal2)
+            return 0;
+        }
+    }
+    return 1;
+}
+
+//O(cardinal1 * cardinal2)
+int igualConjunto(tConjunto conjunto1, tConjunto conjunto2) {
+    if (conjunto1.cardinal != conjunto2.cardinal) {
+        return 0;
+    }
+
+    return esSubconjunto(conjunto1, conjunto2) && esSubconjunto(conjunto2, conjunto1);
+}
+
+//O(cardinal_original)
+void asignarConjunto(tConjunto *copia, tConjunto original) {
+    copia->cardinal = original.cardinal;
+    for (int i = 0; i < original.cardinal; i++) {
+        copia->almacen[i] = original.almacen[i];
+    }
+}
+//O(1)
+void destruirConjunto(tConjunto *conjunto) {
+    conjunto->cardinal = 0;
+}
+
 // O((cardinalA + cardinalB)^2) en el peor caso
 
 tConjunto unionConjuntos(tConjunto conjuntoA, tConjunto conjuntoB) {
