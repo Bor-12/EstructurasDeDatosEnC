@@ -1,0 +1,16 @@
+# ninja log v6
+5	62	7650634119126466	CMakeFiles/BingoEscolar.dir/tElemento.c.obj	6419dce1a286f0dc
+2	50	7650640970390753	CMakeFiles/BingoEscolar.dir/main.c.obj	4238f025aca67c4b
+0	199	7650641532432927	build.ninja	5645794254ea2e38
+4	91	7650640970420667	CMakeFiles/BingoEscolar.dir/Conjunto.c.obj	28e9e69c0876aa85
+91	154	7650640971285686	BingoEscolar.exe	1ab3566a632b696f
+4	58	7650634988692912	CMakeFiles/BingoEscolar.dir/tLista.c.obj	e22efb950899481a
+8	69	7650642308784071	CMakeFiles/BingoEscolar.dir/Conjunto.c.obj	28e9e69c0876aa85
+69	132	7650642309392445	BingoEscolar.exe	1ab3566a632b696f
+8	55	7650644121188921	CMakeFiles/BingoEscolar.dir/main.c.obj	4238f025aca67c4b
+10	103	7650644121208874	CMakeFiles/BingoEscolar.dir/Conjunto.c.obj	28e9e69c0876aa85
+103	167	7650644122130937	BingoEscolar.exe	1ab3566a632b696f
+8	55	7650644353169132	CMakeFiles/BingoEscolar.dir/main.c.obj	4238f025aca67c4b
+55	117	7650644353648304	BingoEscolar.exe	1ab3566a632b696f
+8	69	7650644445277437	CMakeFiles/BingoEscolar.dir/Conjunto.c.obj	28e9e69c0876aa85
+70	131	7650644445891106	BingoEscolar.exe	1ab3566a632b696f

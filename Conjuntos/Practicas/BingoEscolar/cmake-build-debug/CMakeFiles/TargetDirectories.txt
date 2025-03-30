@@ -1,0 +1,3 @@
+D:/EstructurasDeDatos/Conjuntos/Practicas/BingoEscolar/cmake-build-debug/CMakeFiles/BingoEscolar.dir
+D:/EstructurasDeDatos/Conjuntos/Practicas/BingoEscolar/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/EstructurasDeDatos/Conjuntos/Practicas/BingoEscolar/cmake-build-debug/CMakeFiles/rebuild_cache.dir
