@@ -14,8 +14,8 @@ typedef struct {
 } tElemento;
 
 void asignarElemento(tElemento *destino, tElemento origen);
-int esMenor(tElemento e1, tElemento e2);      // Puedes comparar por visionados, por ejemplo
-int esIgual(tElemento e1, tElemento e2);      // Puedes comparar por título y fecha
+int esMenor(tElemento e1, tElemento e2);
+int esIgual(tElemento e1, tElemento e2);
 void mostrarElemento(tElemento e);
 tElemento elementoVacio();
 void leerCadena(char *cadena, int max);

@@ -1,7 +1,12 @@
 # ninja log v6
-1	196	7644557923501340	build.ninja	889f13a509022027
+1	196	7651464419004393	build.ninja	889f13a509022027
 16	109	7644467794516986	CMakeFiles/ElBotin.dir/cola.c.obj	171bd017e7ce3856
 18	112	7644467794536936	CMakeFiles/ElBotin.dir/pila.c.obj	627b66fb90d0ac3c
 14	112	7644467794497032	CMakeFiles/ElBotin.dir/main.c.obj	d23e728ef1987c12
 121	192	7644467795564177	ElBotin.exe	9d8a55197b0ed555
 20	121	7644467794556868	CMakeFiles/ElBotin.dir/secuaz.c.obj	52ae00aa667ffcc1
+6	61	7651464687658943	CMakeFiles/ElBotin.dir/pila.c.obj	fad0901e3d7677b0
+5	62	7651464687638996	CMakeFiles/ElBotin.dir/cola.c.obj	2d567c8b3f7505fe
+8	65	7651464687678876	CMakeFiles/ElBotin.dir/secuaz.c.obj	de828cc476103eb7
+2	65	7651464687619040	CMakeFiles/ElBotin.dir/main.c.obj	69190223e90574df
+65	129	7651464688250279	ElBotin.exe	9d8a55197b0ed555

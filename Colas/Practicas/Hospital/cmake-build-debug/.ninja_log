@@ -1,11 +1,8 @@
 # ninja log v6
-11	209	7644590831306503	build.ninja	9aea15c18cd35cde
-13	97	7644590472277229	CMakeFiles/Hospital.dir/main.c.obj	9af3c0a09a9353cd
+1	193	7651466808991325	build.ninja	9aea15c18cd35cde
+14	70	7644590831772243	CMakeFiles/Hospital.dir/main.c.obj	9af3c0a09a9353cd
 11	66	7644589869192053	CMakeFiles/Hospital.dir/Cola.c.obj	f93087346330d095
-113	180	7644590097683275	Hospital.exe	29f7a11763b18dcd
+70	151	7644590832332663	Hospital.exe	29f7a11763b18dcd
 14	64	7644589869211720	CMakeFiles/Hospital.dir/tElemento.c.obj	a47d616e993bf811
 17	99	7644589869241642	CMakeFiles/Hospital.dir/tLista.c.obj	a3ea0a36ad522eab
 16	105	7644590472307147	CMakeFiles/Hospital.dir/Hospital.c.obj	5673acfca7434510
-1	193	7644590831306503	build.ninja	9aea15c18cd35cde
-14	70	7644590831772243	CMakeFiles/Hospital.dir/main.c.obj	9af3c0a09a9353cd
-70	151	7644590832332663	Hospital.exe	29f7a11763b18dcd

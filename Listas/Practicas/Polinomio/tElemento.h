@@ -5,7 +5,7 @@
 #ifndef TELEMENTO_H
 #define TELEMENTO_H
 
-typedef struct termino {
+typedef struct  {
     float coeficiente;
     int exponente;
 } tElemento;

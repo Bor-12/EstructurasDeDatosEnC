@@ -1,6 +1,10 @@
 # ninja log v6
 731	795	7644311141182630	FakeNews.exe	715a5460cec9724e
-12	206	7644355455232774	build.ninja	c80db3e4c7d7a66d
+12	206	7651411165207096	build.ninja	c80db3e4c7d7a66d
 13	730	7644311134008634	CMakeFiles/FakeNews.dir/main.c.obj	c06da6ddcdbe91a0
 15	67	7644310062245804	CMakeFiles/FakeNews.dir/tElemento.c.obj	4c30a9fbdf6fa645
 17	66	7644310062265755	CMakeFiles/FakeNews.dir/tLista.c.obj	bb9f2e05da727de6
+87	345	7651411608895882	CMakeFiles/FakeNews.dir/tElemento.c.obj	b63a64b8485abf1c
+89	345	7651411608915846	CMakeFiles/FakeNews.dir/tLista.c.obj	8cf7c9dfd84fed0d
+11	1935	7651411608137911	CMakeFiles/FakeNews.dir/main.c.obj	59f60801619f16d3
+1935	2200	7651411627374796	FakeNews.exe	715a5460cec9724e
