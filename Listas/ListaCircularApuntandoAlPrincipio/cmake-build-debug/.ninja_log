@@ -1,0 +1,6 @@
+# ninja log v6
+1	235	7651409345559448	build.ninja	357d842b3ec231ca
+19	85	7651409346312652	CMakeFiles/ListaCircularApuntandoAlPrincipio.dir/main.c.obj	5ac850ec357a81c5
+21	86	7651409346332593	CMakeFiles/ListaCircularApuntandoAlPrincipio.dir/tElemento.c.obj	48adbb121277da47
+23	97	7651409346362508	CMakeFiles/ListaCircularApuntandoAlPrincipio.dir/tLista.c.obj	71248004a17e225e
+97	209	7651409347091520	ListaCircularApuntandoAlPrincipio.exe	69a205383c50cc9d
