@@ -16,7 +16,7 @@ typedef struct NodoLista {
 typedef struct Lista {
     tNodoLista *principio;
     tNodoLista *final;
-}tLista;
+}tLista ;
 
 void crearListaVacia(tLista *lista);
 int esListaVacia(tLista lista);
