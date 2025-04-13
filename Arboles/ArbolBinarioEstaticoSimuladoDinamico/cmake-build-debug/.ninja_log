@@ -1,0 +1,9 @@
+# ninja log v6
+2	245	7662374278568278	build.ninja	aec28104efbc78fb
+78	138	7662369726904838	ArbolBinarioEstaticoSimuladoDinamico.exe	dc23fd0555b57598
+17	65	7662369726286107	CMakeFiles/ArbolBinarioEstaticoSimuladoDinamico.dir/main.c.obj	266de50616810578
+20	67	7662369726326270	CMakeFiles/ArbolBinarioEstaticoSimuladoDinamico.dir/tElemento.c.obj	158783e1488e5a4c
+18	78	7662369726306054	CMakeFiles/ArbolBinarioEstaticoSimuladoDinamico.dir/ArbolBinario.c.obj	e26751ab87203838
+2	93	7662382347346681	CMakeFiles/ArbolBinarioEstaticoSimuladoDinamico.dir/main.c.obj	266de50616810578
+5	116	7662382347376602	CMakeFiles/ArbolBinarioEstaticoSimuladoDinamico.dir/ArbolBinario.c.obj	e26751ab87203838
+116	177	7662382348487780	ArbolBinarioEstaticoSimuladoDinamico.exe	dc23fd0555b57598
