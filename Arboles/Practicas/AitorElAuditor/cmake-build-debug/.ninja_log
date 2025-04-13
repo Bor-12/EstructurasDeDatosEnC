@@ -1,0 +1,21 @@
+# ninja log v6
+1	229	7662722370292510	build.ninja	b22f7cf534befcaa
+22	82	7662722244965600	CMakeFiles/AitorElAuditor.dir/tElemento.c.obj	4502a2fee8d2fe6e
+16	71	7662722244905760	CMakeFiles/AitorElAuditor.dir/main.c.obj	38fd408bff7a55bd
+19	110	7662722244945652	CMakeFiles/AitorElAuditor.dir/ArbolBinario.c.obj	ec26626e611358fd
+88	150	7662709881504318	AitorElAuditor.exe	4aec9921caf26a7e
+13	210	7662722370292510	build.ninja	b22f7cf534befcaa
+14	66	7662722370841039	CMakeFiles/AitorElAuditor.dir/tLista.c.obj	dcabdbbc688f7a12
+66	128	7662722371362217	AitorElAuditor.exe	1685a27d117faa14
+13	62	7662724163043563	CMakeFiles/AitorElAuditor.dir/main.c.obj	38fd408bff7a55bd
+62	171	7662724163532263	AitorElAuditor.exe	1685a27d117faa14
+2	76	7662725191506337	CMakeFiles/AitorElAuditor.dir/ArbolBinario.c.obj	ec26626e611358fd
+105	168	7662725192533590	AitorElAuditor.exe	1685a27d117faa14
+13	88	7662726722186816	CMakeFiles/AitorElAuditor.dir/ArbolBinario.c.obj	ec26626e611358fd
+88	155	7662726722934825	AitorElAuditor.exe	1685a27d117faa14
+14	62	7662727197060265	CMakeFiles/AitorElAuditor.dir/main.c.obj	38fd408bff7a55bd
+63	129	7662727197549252	AitorElAuditor.exe	1685a27d117faa14
+15	66	7662727309122414	CMakeFiles/AitorElAuditor.dir/main.c.obj	38fd408bff7a55bd
+66	133	7662727309631404	AitorElAuditor.exe	1685a27d117faa14
+2	51	7662728105802183	CMakeFiles/AitorElAuditor.dir/main.c.obj	38fd408bff7a55bd
+52	115	7662728106300857	AitorElAuditor.exe	1685a27d117faa14
