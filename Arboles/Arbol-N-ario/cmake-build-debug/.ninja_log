@@ -1,0 +1,19 @@
+# ninja log v6
+1	201	7662682637821753	build.ninja	a0b0a786768280a6
+22	78	7662571272960146	CMakeFiles/Arbol_N_ario.dir/tElemento.c.obj	ec1645362d257906
+2	56	7662674828143452	CMakeFiles/Arbol_N_ario.dir/main.c.obj	63f3e1c2541f6e04
+5	60	7662674828173376	CMakeFiles/Arbol_N_ario.dir/Arbol-N-ario.c.obj	e10566b38c0e3fcc
+6	43	7662577760724842	CMakeFiles/Arbol_N_ario.dir/tNodoArbol.c.obj	b8bc8c600c840806
+7	56	7662674828183341	CMakeFiles/Arbol_N_ario.dir/tLista.c.obj	fbb3eaace3c71479
+60	131	7662674828721903	Arbol_N_ario.exe	ee3114b7edc035c7
+1	229	7662682637821753	build.ninja	a0b0a786768280a6
+15	65	7662682638629905	CMakeFiles/Arbol_N_ario.dir/main.c.obj	63f3e1c2541f6e04
+2	52	7662682866354139	CMakeFiles/Arbol_N_ario.dir/Arbol-N-ario.c.obj	e10566b38c0e3fcc
+79	144	7662682867126223	Arbol_N_ario.exe	a8a6d3955214c4b7
+5	64	7662685147470223	CMakeFiles/Arbol_N_ario.dir/Arbol-N-ario.c.obj	e10566b38c0e3fcc
+2	81	7662685147440301	CMakeFiles/Arbol_N_ario.dir/main.c.obj	63f3e1c2541f6e04
+81	156	7662685148228235	Arbol_N_ario.exe	a8a6d3955214c4b7
+2	53	7662686468591292	CMakeFiles/Arbol_N_ario.dir/main.c.obj	63f3e1c2541f6e04
+54	131	7662686469109709	Arbol_N_ario.exe	a8a6d3955214c4b7
+3	55	7662687570605786	CMakeFiles/Arbol_N_ario.dir/main.c.obj	63f3e1c2541f6e04
+55	116	7662687571135107	Arbol_N_ario.exe	a8a6d3955214c4b7
