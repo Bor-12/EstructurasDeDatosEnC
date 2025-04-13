@@ -1,0 +1,14 @@
+# ninja log v6
+1	218	7662324526193166	build.ninja	a1aec1fc71116177
+20	87	7662317627695336	CMakeFiles/Politos.dir/Conjunto.c.obj	c4a7bdc35e8849
+25	263	7662322882980050	CMakeFiles/Politos.dir/main.c.obj	5bfc75907a3faf9f
+103	264	7662322883767951	CMakeFiles/Politos.dir/tElemento.c.obj	430ca8a3dacefbc1
+87	182	7662317628373518	Politos.exe	d0b6e8ac4f0f0d88
+18	64	7662326421065916	CMakeFiles/Politos.dir/tElemento.c.obj	430ca8a3dacefbc1
+14	98	7662326421017116	CMakeFiles/Politos.dir/main.c.obj	5bfc75907a3faf9f
+16	104	7662326421045559	CMakeFiles/Politos.dir/Conjunto.c.obj	c4a7bdc35e8849
+104	334	7662326421921937	Politos.exe	d0b6e8ac4f0f0d88
+3	51	7662328694780717	CMakeFiles/Politos.dir/main.c.obj	5bfc75907a3faf9f
+52	116	7662328695268556	Politos.exe	d0b6e8ac4f0f0d88
+15	62	7662329255113113	CMakeFiles/Politos.dir/main.c.obj	5bfc75907a3faf9f
+63	129	7662329255594109	Politos.exe	d0b6e8ac4f0f0d88
