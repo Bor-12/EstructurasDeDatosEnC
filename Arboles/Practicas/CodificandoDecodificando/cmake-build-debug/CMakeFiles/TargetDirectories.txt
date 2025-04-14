@@ -1,0 +1,3 @@
+D:/EstructurasDeDatos/Arboles/Practicas/CodificandoDecodificando/cmake-build-debug/CMakeFiles/CodificandoDecodificando.dir
+D:/EstructurasDeDatos/Arboles/Practicas/CodificandoDecodificando/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/EstructurasDeDatos/Arboles/Practicas/CodificandoDecodificando/cmake-build-debug/CMakeFiles/rebuild_cache.dir
