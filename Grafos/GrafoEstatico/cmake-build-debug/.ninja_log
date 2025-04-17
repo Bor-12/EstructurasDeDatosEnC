@@ -1,0 +1,20 @@
+# ninja log v6
+18	304	7665862567525486	CMakeFiles/GrafoEstatico.dir/main.c.obj	5f2741f3994e0810
+8	60	7665865632031776	CMakeFiles/GrafoEstatico.dir/Grafo.c.obj	5cde5e3041edc494
+7	362	7665865866822050	build.ninja	f201b53f01795f3
+15	61	7665865867545570	CMakeFiles/GrafoEstatico.dir/tElemento.c.obj	d63859470e05a726
+62	122	7665865868011732	GrafoEstatico.exe	f2ce4438529d611f
+8	85	7665869385503645	CMakeFiles/GrafoEstatico.dir/main.c.obj	5f2741f3994e0810
+11	99	7665869385533565	CMakeFiles/GrafoEstatico.dir/Grafo.c.obj	5cde5e3041edc494
+99	160	7665869386410636	GrafoEstatico.exe	f2ce4438529d611f
+7	54	7665869801187213	CMakeFiles/GrafoEstatico.dir/main.c.obj	5f2741f3994e0810
+54	114	7665869801657050	GrafoEstatico.exe	f2ce4438529d611f
+10	61	7665870988849817	CMakeFiles/GrafoEstatico.dir/Grafo.c.obj	5cde5e3041edc494
+7	92	7665870988829882	CMakeFiles/GrafoEstatico.dir/main.c.obj	5f2741f3994e0810
+92	152	7665870989670367	GrafoEstatico.exe	f2ce4438529d611f
+8	54	7665871494564893	CMakeFiles/GrafoEstatico.dir/main.c.obj	5f2741f3994e0810
+54	116	7665871495023681	GrafoEstatico.exe	f2ce4438529d611f
+8	63	7665872436406713	CMakeFiles/GrafoEstatico.dir/Grafo.c.obj	5cde5e3041edc494
+63	123	7665872436952350	GrafoEstatico.exe	f2ce4438529d611f
+8	62	7665873031121431	CMakeFiles/GrafoEstatico.dir/main.c.obj	5f2741f3994e0810
+63	137	7665873031674566	GrafoEstatico.exe	f2ce4438529d611f
