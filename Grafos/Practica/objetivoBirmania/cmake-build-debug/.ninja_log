@@ -1,0 +1,21 @@
+# ninja log v6
+4	67	7678225111544950	CMakeFiles/objetivoBirmania.dir/Persona.c.obj	4c52624e6c654fb
+1	68	7678225111514770	CMakeFiles/objetivoBirmania.dir/main.c.obj	8638e43ec494fc7
+6	71	7678225111564903	CMakeFiles/objetivoBirmania.dir/grafo.c.obj	e0065ca331e94922
+71	138	7678225112215020	objetivoBirmania.exe	44f3b3565d407a62
+14	68	7678225360896525	CMakeFiles/objetivoBirmania.dir/grafo.c.obj	e0065ca331e94922
+68	129	7678225361432527	objetivoBirmania.exe	44f3b3565d407a62
+18	91	7678230534603913	CMakeFiles/objetivoBirmania.dir/Persona.c.obj	4c52624e6c654fb
+15	92	7678230534573435	CMakeFiles/objetivoBirmania.dir/main.c.obj	8638e43ec494fc7
+17	64	7678231096583133	CMakeFiles/objetivoBirmania.dir/Persona.c.obj	4c52624e6c654fb
+14	67	7678231096553204	CMakeFiles/objetivoBirmania.dir/main.c.obj	8638e43ec494fc7
+18	92	7678231096593108	CMakeFiles/objetivoBirmania.dir/grafo.c.obj	e0065ca331e94922
+2	55	7678231296280440	CMakeFiles/objetivoBirmania.dir/main.c.obj	8638e43ec494fc7
+2	53	7678231423542121	CMakeFiles/objetivoBirmania.dir/main.c.obj	8638e43ec494fc7
+13	59	7678231577978118	CMakeFiles/objetivoBirmania.dir/main.c.obj	8638e43ec494fc7
+15	67	7678231578008031	CMakeFiles/objetivoBirmania.dir/grafo.c.obj	e0065ca331e94922
+16	64	7678232175412325	CMakeFiles/objetivoBirmania.dir/main.c.obj	8638e43ec494fc7
+19	73	7678232175442557	CMakeFiles/objetivoBirmania.dir/grafo.c.obj	e0065ca331e94922
+73	133	7678232175982969	objetivoBirmania.exe	44f3b3565d407a62
+17	78	7678233519542554	CMakeFiles/objetivoBirmania.dir/grafo.c.obj	e0065ca331e94922
+78	139	7678233520152894	objetivoBirmania.exe	44f3b3565d407a62
