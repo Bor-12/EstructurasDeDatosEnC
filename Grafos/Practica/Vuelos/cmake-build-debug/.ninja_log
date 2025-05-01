@@ -1,0 +1,26 @@
+# ninja log v6
+1	189	7677974728871520	build.ninja	b0e80965fc2b07e1
+9	64	7677971046636587	CMakeFiles/Vuelos.dir/main.c.obj	7105f6968ce1bdec
+8	79	7677974401687687	CMakeFiles/Vuelos.dir/Grafo.c.obj	366f60db14b383d
+8	54	7677958645425975	CMakeFiles/Vuelos.dir/InfoVuelos.c.obj	240dc5f5754697b8
+12	80	7677953594622005	CMakeFiles/main.c.dir/Grafo.c.obj	824a0fb916306a60
+14	65	7677953594641957	CMakeFiles/main.c.dir/InfoVuelos.c.obj	7835ff1a513e5122
+8	115	7677957044528136	CMakeFiles/Vuelos.dir/Ciudad.c.obj	cb18ee133fcf99b8
+15	65	7677953594661909	CMakeFiles/main.c.dir/Ciudad.c.obj	1880088a390ae87b
+125	190	7677968490324395	Vuelos.exe	c9f26496a979265b
+7	255	7677974728871520	build.ninja	b0e80965fc2b07e1
+15	67	7677974729431574	CMakeFiles/Vuelos.dir/Pila.c.obj	a2be77759ede1ee
+69	134	7677974729960156	Vuelos.exe	cab9cd6a5b268cd8
+9	64	7677974979801025	CMakeFiles/Vuelos.dir/main.c.obj	7105f6968ce1bdec
+64	130	7677974980349792	Vuelos.exe	cab9cd6a5b268cd8
+9	64	7677975531847345	CMakeFiles/Vuelos.dir/main.c.obj	7105f6968ce1bdec
+8	112	7677976333497370	CMakeFiles/Vuelos.dir/main.c.obj	7105f6968ce1bdec
+10	125	7677976333517317	CMakeFiles/Vuelos.dir/Grafo.c.obj	366f60db14b383d
+8	63	7677976527043860	CMakeFiles/Vuelos.dir/main.c.obj	7105f6968ce1bdec
+10	76	7677976527074060	CMakeFiles/Vuelos.dir/Grafo.c.obj	366f60db14b383d
+9	146	7677978529249024	CMakeFiles/Vuelos.dir/Grafo.c.obj	366f60db14b383d
+9	83	7677979169280372	CMakeFiles/Vuelos.dir/Grafo.c.obj	366f60db14b383d
+9	62	7677980193563743	CMakeFiles/Vuelos.dir/main.c.obj	7105f6968ce1bdec
+62	177	7677980194102293	Vuelos.exe	cab9cd6a5b268cd8
+9	83	7677980947537451	CMakeFiles/Vuelos.dir/Grafo.c.obj	366f60db14b383d
+83	148	7677980948275482	Vuelos.exe	cab9cd6a5b268cd8
