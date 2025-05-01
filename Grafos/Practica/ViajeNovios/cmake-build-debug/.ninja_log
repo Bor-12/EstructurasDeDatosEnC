@@ -1,0 +1,6 @@
+# ninja log v6
+15	69	7678214095194934	CMakeFiles/untitled.dir/main.c.obj	ccc856a075701f4b
+69	130	7678214095734222	untitled.exe	a19c7ec384ffc907
+2	209	7678215188162356	build.ninja	50c13dd0e2ebb64d
+20	75	7678203011925685	CMakeFiles/untitled.dir/Ciudad.c.obj	4720a91fc9e361ad
+5	57	7678213972876709	CMakeFiles/untitled.dir/grafo.c.obj	5d54d4bee252a8ca
