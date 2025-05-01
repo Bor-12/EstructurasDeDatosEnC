@@ -39,6 +39,7 @@ int main(void) {
     printf("GRAFO COMPLETO:\n");
     mostrarGrafo(grafo);
 
+
     // Aplicar la función objetivoBirmania
     tPersona resultado[MAX_AMIGOS];
     int numResultado;
