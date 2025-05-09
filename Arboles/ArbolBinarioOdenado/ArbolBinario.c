@@ -50,6 +50,7 @@ void inOrden(tArbol arbol) {
 
 
 //LA FUNCION DE PERTENECE SE PUEDE MERJORAR RESPECTO DE UN ARBOL NO ORDENADO
+//Siempre que se busque un elemento se comprobara si es mayor o menor para saber por que parte del arbol buscar
 int pertenece(tArbol arbol, tElemento elemento){
     int resultado = 0;
 
@@ -67,15 +68,21 @@ int pertenece(tArbol arbol, tElemento elemento){
 int esPadreOMadre(tArbol arbol, tElemento padre, tElemento hijo) {
     if (arbol == NULL) return 0;
 
-    if (esIgual(arbol->elemento, padre)) {
-        if ((arbol->izquierda != NULL && esIgual(arbol->izquierda->elemento, hijo)) ||
-            (arbol->derecha != NULL && esIgual(arbol->derecha->elemento, hijo))) {
-            return 1;
-            }
-    }
+    if (esIgual(arbol->elemento, padre) &&
+        ((arbol->izquierda != NULL && esIgual(arbol->izquierda->elemento, hijo)) ||
+         (arbol->derecha != NULL && esIgual(arbol->derecha->elemento, hijo)))) {
+        return 1;
+         }
 
-    return esPadreOMadre(arbol->izquierda, padre, hijo) || esPadreOMadre(arbol->derecha, padre, hijo);
+    if (esMenor(padre, arbol->elemento)) {
+        return esPadreOMadre(arbol->izquierda, padre, hijo);
+    } else {
+        return esPadreOMadre(arbol->derecha, padre, hijo);
+    }
 }
+
+
+
 int contarNodos(tArbol arbol) {
     int resultado = 0;
     if (arbol == NULL) {
@@ -210,7 +217,7 @@ int maximo(tArbol arbol, tElemento* elemento) {
 }
 void eliminarElemento(tArbol* arbol, tElemento elemento) {
     tNodo *aux;
-    if ((*arbol) != NULL) {
+    if (*arbol != NULL) {
 
         if (esIgual((*arbol)->elemento, elemento)) {
 
