@@ -1,0 +1,13 @@
+# ninja log v6
+1	65	7684834151056100	CMakeFiles/ArbolBinarioOdenado.dir/main.c.obj	153c3259e42f58c1
+3	65	7684834151076052	CMakeFiles/ArbolBinarioOdenado.dir/tElemento.c.obj	599cefdcba199692
+5	83	7684834151095991	CMakeFiles/ArbolBinarioOdenado.dir/ArbolBinario.c.obj	c5d60d9b8d625a81
+83	189	7684834151875172	ArbolBinarioOdenado.exe	4802e5f1ce4213cc
+8	58	7684836818690507	CMakeFiles/ArbolBinarioOdenado.dir/main.c.obj	153c3259e42f58c1
+11	114	7684836818720437	CMakeFiles/ArbolBinarioOdenado.dir/ArbolBinario.c.obj	c5d60d9b8d625a81
+114	175	7684836819756743	ArbolBinarioOdenado.exe	4802e5f1ce4213cc
+8	57	7684837654045290	CMakeFiles/ArbolBinarioOdenado.dir/main.c.obj	153c3259e42f58c1
+57	119	7684837654543961	ArbolBinarioOdenado.exe	4802e5f1ce4213cc
+2	51	7684839131895238	CMakeFiles/ArbolBinarioOdenado.dir/main.c.obj	153c3259e42f58c1
+4	71	7684839131925155	CMakeFiles/ArbolBinarioOdenado.dir/ArbolBinario.c.obj	c5d60d9b8d625a81
+71	132	7684839132583392	ArbolBinarioOdenado.exe	4802e5f1ce4213cc
