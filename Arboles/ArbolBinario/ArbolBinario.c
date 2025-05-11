@@ -37,6 +37,115 @@ void inOrden(tArbol arbol) {
     }
 }
 
+int pertenece(tArbol arbol, tElemento elemento) {
+    if (esArbolVacio(arbol)) return 0;
+    if (esIgual(arbol->elemento, elemento)) return 1;
+
+    if (pertenece(arbol->izquierda, elemento)) return 1;
+    if (pertenece(arbol->derecha, elemento)) return 1;
+
+    return 0;
+}
+int esPadreOMadre(tArbol arbol, tElemento padre, tElemento hijo) {
+    if (arbol == NULL) return 0;
+
+    if (esIgual(arbol->elemento, padre)) {
+        if ((arbol->izquierda != NULL && esIgual(arbol->izquierda->elemento, hijo)) ||
+            (arbol->derecha != NULL && esIgual(arbol->derecha->elemento, hijo))) {
+            return 1;
+            }
+    }
+
+    return esPadreOMadre(arbol->izquierda, padre, hijo) || esPadreOMadre(arbol->derecha, padre, hijo);
+}
+int contarNodos(tArbol arbol) {
+    int resultado = 0;
+    if (arbol == NULL) {
+        resultado = 0;
+    }else{
+        resultado =  1 + contarNodos(arbol->izquierda) + contarNodos(arbol->derecha);
+    }
+
+    return resultado;
+}
+int contarHojas(tArbol arbol) {
+    int resultado = 0;
+    if (arbol == NULL) {
+        resultado = 0;
+    }else if (arbol->izquierda == NULL && arbol->derecha == NULL) {
+        resultado = 1;
+    } else {
+        resultado = contarHojas(arbol->izquierda) + contarHojas(arbol->derecha);
+    }
+    return resultado;
+}
+
+void construirEspejo(tArbol arbol, tArbol *espejo) {
+    if (arbol == NULL) {
+        *espejo = NULL;
+    } else {
+        *espejo = (tArbol) malloc(sizeof(tNodo));
+        asignarElemento(&(*espejo)->elemento, arbol->elemento);
+
+        construirEspejo(arbol->derecha, &(*espejo)->izquierda);
+        construirEspejo(arbol->izquierda, &(*espejo)->derecha);
+    }
+}
+
+
+int profundidad(tArbol arbol) {
+    int resultado = 0;
+
+    if (arbol != NULL) {
+        int izqProfundidad = profundidad(arbol->izquierda);
+        int derProfundidad = profundidad(arbol->derecha);
+
+        if (izqProfundidad > derProfundidad) {
+            resultado = 1 + izqProfundidad;
+        } else {
+            resultado = 1 + derProfundidad;
+        }
+    }
+
+    return resultado;
+}
+
+
+
+int estaEquilibrado(tArbol arbol) {
+    int resultado = 1;
+
+    if (arbol != NULL) {
+        int izqProfundidad = profundidad(arbol->izquierda);
+        int derProfundidad = profundidad(arbol->derecha);
+
+        if (abs(izqProfundidad - derProfundidad) > 1 ||
+            !estaEquilibrado(arbol->izquierda) ||
+            !estaEquilibrado(arbol->derecha)) {
+            resultado = 0;
+            }
+    }
+
+    return resultado;
+}
+
+int nivelNodo(tArbol arbol, tElemento e, int nivel) {
+    int resultado = -1;
+
+    if (arbol != NULL) {
+        if (esIgual(arbol->elemento, e)) {
+            resultado = nivel;
+        } else {
+            int izqNivel = nivelNodo(arbol->izquierda, e, nivel + 1);
+            if (izqNivel != -1) {
+                resultado = izqNivel;
+            } else {
+                resultado = nivelNodo(arbol->derecha, e, nivel + 1);
+            }
+        }
+    }
+    return resultado;
+}
 
 void preOrden(tArbol arbol) {
     if (arbol != NULL) {

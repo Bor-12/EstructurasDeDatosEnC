@@ -1,15 +1,11 @@
 # ninja log v6
-1	202	7665876127784996	build.ninja	6482d0bd2c51a4d2
-18	86	7665876128423284	CMakeFiles/GrafoDinamico.dir/Grafo.c.obj	4cbc0fda2c021dad
-16	96	7665876128403343	CMakeFiles/GrafoDinamico.dir/main.c.obj	34364df97f8f596b
-19	97	7665876128433268	CMakeFiles/GrafoDinamico.dir/tElemento.c.obj	b175aa7b0723a2e0
-97	158	7665876129211185	GrafoDinamico.exe	1fa6e8db5e290776
-8	61	7665909079562267	CMakeFiles/GrafoDinamico.dir/main.c.obj	34364df97f8f596b
-11	111	7665909079582211	CMakeFiles/GrafoDinamico.dir/Grafo.c.obj	4cbc0fda2c021dad
-112	182	7665909080586324	GrafoDinamico.exe	1fa6e8db5e290776
-14	59	7665909401071118	CMakeFiles/GrafoDinamico.dir/main.c.obj	34364df97f8f596b
-59	120	7665909401530490	GrafoDinamico.exe	1fa6e8db5e290776
-15	74	7665911089890812	CMakeFiles/GrafoDinamico.dir/Grafo.c.obj	4cbc0fda2c021dad
-74	133	7665911090467892	GrafoDinamico.exe	1fa6e8db5e290776
+1	202	7677942503678169	build.ninja	6482d0bd2c51a4d2
 2	61	7665912243483485	CMakeFiles/GrafoDinamico.dir/Grafo.c.obj	4cbc0fda2c021dad
+14	59	7665909401071118	CMakeFiles/GrafoDinamico.dir/main.c.obj	34364df97f8f596b
+19	97	7665876128433268	CMakeFiles/GrafoDinamico.dir/tElemento.c.obj	b175aa7b0723a2e0
 61	121	7665912244071912	GrafoDinamico.exe	1fa6e8db5e290776
+18	358	7677944606528807	CMakeFiles/GrafoDinamico.dir/Grafo.c.obj	4cbc0fda2c021dad
+14	108	7677944895909487	CMakeFiles/GrafoDinamico.dir/main.c.obj	34364df97f8f596b
+108	547	7677944896845367	GrafoDinamico.exe	1fa6e8db5e290776
+16	110	7677944987561800	CMakeFiles/GrafoDinamico.dir/main.c.obj	34364df97f8f596b
+110	173	7677944988515490	GrafoDinamico.exe	1fa6e8db5e290776

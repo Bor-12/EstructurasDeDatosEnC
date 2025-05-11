@@ -71,7 +71,7 @@ int longitudConjunto(tConjunto conjunto) {
 
 void extraerElemento(tConjunto *conjunto, tElemento *elem) {
     if (*conjunto == NULL) {
-        *elem = elementoVacio(); // o simplemente return si prefieres
+        *elem = elementoVacio();
         return;
     }
 

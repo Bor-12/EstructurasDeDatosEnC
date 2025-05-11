@@ -6,7 +6,7 @@
 int main() {
     tArbol arbol;
     char palabra[] = "murcielago";
-    char codificada[] = "megolaucir";  // resultado esperado tras codificar y luego decodificar
+    char codificada[] = "megolaucir";
 
     printf("-------Codificando la palabra: %s -------\n", palabra);
     codificarPalabra(&arbol, palabra);

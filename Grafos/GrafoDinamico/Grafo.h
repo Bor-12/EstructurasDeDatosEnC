@@ -9,6 +9,7 @@
 typedef struct NodoAdyacencias {
     struct NodoAdyacencias *siguiente;
     tElemento vertice;
+    int ponderacion; //puede ser cualquier tipo de datos
 }tNodoAdyacencias;
 
 typedef tNodoAdyacencias *tListaAdyacencias;
@@ -23,8 +24,8 @@ typedef tNodoGrafo *tGrafo;
 
 void crearGrafoVacio(tGrafo *grafo);
 void insertarVertice(tGrafo *grafo, tElemento vertice);
-void insertarConexion(tGrafo *grafo, tElemento origen, tElemento destino); //dirigido
-void insertarArista(tGrafo *grafo, tElemento origen, tElemento destino);// no dirigido
+void insertarConexion(tGrafo *grafo, tElemento origen, tElemento destino, int ponderacion); //dirigido
+void insertarArista(tGrafo *grafo, tElemento origen, tElemento destino, int ponderacion);// no dirigido
 
 void mostrarVerticesGrafo(tGrafo grafo);
 void mostrarConexionesGrafo(tGrafo grafo);

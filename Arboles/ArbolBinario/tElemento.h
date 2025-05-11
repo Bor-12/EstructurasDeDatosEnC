@@ -5,7 +5,7 @@
 #ifndef TELEMENTO_H
 #define TELEMENTO_H
 typedef struct {
-    int numero;
+    int valor;
 }tElemento;
 void asignarElemento(tElemento *PunteroElemento, tElemento valor);
 int esMenor(tElemento e1, tElemento e2);

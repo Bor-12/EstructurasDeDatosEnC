@@ -1,13 +1,4 @@
 "D:\CLion 2024.3.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=D:/CLion 2024.3.2/bin/ninja/win/x64/ninja.exe" -G Ninja -S D:\EstructurasDeDatos\Arboles\Arbol-N-ario -B D:\EstructurasDeDatos\Arboles\Arbol-N-ario\cmake-build-debug
--- Configuring done (0.1s)
-CMake Error at CMakeLists.txt:6 (add_executable):
-  Cannot find source file:
-
-    ar
-
-
-CMake Error at CMakeLists.txt:6 (add_executable):
-  No SOURCES given to target: Arbol_N_ario
-
-
-CMake Generate step failed.  Build files cannot be regenerated correctly.
+-- Configuring done (0.7s)
+-- Generating done (0.1s)
+-- Build files have been written to: D:/EstructurasDeDatos/Arboles/Arbol-N-ario/cmake-build-debug

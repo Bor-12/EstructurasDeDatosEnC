@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "D:/EstructurasDeDatos/Arbol/ArbolBinario/cmake-build-debug",
-		"source" : "D:/EstructurasDeDatos/Arbol/ArbolBinario"
+		"build" : "D:/EstructurasDeDatos/Arboles/ArbolBinario/cmake-build-debug",
+		"source" : "D:/EstructurasDeDatos/Arboles/ArbolBinario"
 	},
 	"version" : 
 	{

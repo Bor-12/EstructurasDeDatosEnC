@@ -17,7 +17,7 @@ void insertarVertice(tGrafo *grafo, tElemento vertice) {
     nuevoVerticeGrafo -> siguiente = *grafo;
     *grafo = nuevoVerticeGrafo;
 }
-void insertarConexion(tGrafo *grafo, tElemento origen, tElemento destino) {
+void insertarConexion(tGrafo *grafo, tElemento origen, tElemento destino, int ponderacion) {
     tNodoGrafo *auxVerticeOrigen = *grafo;
     while (auxVerticeOrigen != NULL && !esIgual(auxVerticeOrigen->vertice, origen)) {
         auxVerticeOrigen = auxVerticeOrigen->siguiente;
@@ -32,6 +32,7 @@ void insertarConexion(tGrafo *grafo, tElemento origen, tElemento destino) {
         if (auxVerticeAdyacencias == NULL) {
             tNodoAdyacencias *nuevoNodo = (tNodoAdyacencias*) malloc(sizeof(tNodoAdyacencias));
             asignarElemento(&nuevoNodo->vertice, destino);
+            nuevoNodo->ponderacion = ponderacion; //si es otro dato se utilizaria el set correspondiente como conocemos el tipo de dato simpolemente igualo
             nuevoNodo->siguiente = auxVerticeOrigen->adyacencias;
             auxVerticeOrigen->adyacencias = nuevoNodo;
         } else {
@@ -48,10 +49,12 @@ void insertarConexion(tGrafo *grafo, tElemento origen, tElemento destino) {
     }
 }
 
-void insertarArista(tGrafo *grafo, tElemento origen, tElemento destino) {
-    insertarConexion(grafo, origen, destino);
-    insertarConexion(grafo, destino, origen);
+
+void insertarArista(tGrafo *grafo, tElemento origen, tElemento destino, int ponderacion) {
+    insertarConexion(grafo, origen, destino, ponderacion);
+    insertarConexion(grafo, destino, origen, ponderacion);
 }
+
 
 void mostrarVerticesGrafo(tGrafo grafo) {
     tNodoGrafo *aux = grafo;
@@ -68,10 +71,10 @@ void mostrarConexionesGrafo(tGrafo grafo) {
         printf("Las conexiones de ");
         mostrarElemento(aux->vertice);
         printf(" son: ");
-        tNodoAdyacencias *adyacencias = aux->adyacencias;  // <- aqui estaba el error
+        tNodoAdyacencias *adyacencias = aux->adyacencias;
         while (adyacencias != NULL) {
             mostrarElemento(adyacencias->vertice);
-            printf(" ");
+            printf("(peso: %d) ", adyacencias->ponderacion);
             adyacencias = adyacencias->siguiente;
         }
         printf("\n");

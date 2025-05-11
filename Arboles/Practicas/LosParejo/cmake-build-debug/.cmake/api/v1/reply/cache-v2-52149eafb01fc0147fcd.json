@@ -2,42 +2,6 @@
 	"entries" : 
 	[
 		{
-			"name" : "ArbolBinario_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "D:/EstructurasDeDatos/Arbol/ArbolBinario/cmake-build-debug"
-		},
-		{
-			"name" : "ArbolBinario_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "ON"
-		},
-		{
-			"name" : "ArbolBinario_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "D:/EstructurasDeDatos/Arbol/ArbolBinario"
-		},
-		{
 			"name" : "CMAKE_ADDR2LINE",
 			"properties" : 
 			[
@@ -91,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "d:/EstructurasDeDatos/Arbol/ArbolBinario/cmake-build-debug"
+			"value" : "d:/EstructurasDeDatos/Arboles/Practicas/LosParejo/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -467,7 +431,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/EstructurasDeDatos/Arbol/ArbolBinario/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "D:/EstructurasDeDatos/Arboles/Practicas/LosParejo/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -539,7 +503,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/EstructurasDeDatos/Arbol/ArbolBinario"
+			"value" : "D:/EstructurasDeDatos/Arboles/Practicas/LosParejo"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -551,7 +515,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Program Files (x86)/ArbolBinario"
+			"value" : "C:/Program Files (x86)/LosParejo"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -767,7 +731,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "ArbolBinario"
+			"value" : "LosParejo"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1160,6 +1124,42 @@
 			],
 			"type" : "BOOL",
 			"value" : "FALSE"
+		},
+		{
+			"name" : "LosParejo_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "D:/EstructurasDeDatos/Arboles/Practicas/LosParejo/cmake-build-debug"
+		},
+		{
+			"name" : "LosParejo_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "LosParejo_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "D:/EstructurasDeDatos/Arboles/Practicas/LosParejo"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",

@@ -9,11 +9,11 @@
 void codificarPalabra(tArbol *arbol, char *palabra) {
     tArbol original;
 
-    construirCodificado(&original, palabra);  // Árbol original
+    construirCodificado(&original, palabra);
 
-    construirEspejo(original, arbol);         // El espejo se guarda directamente en *arbol
+    construirEspejo(original, arbol);
 
-    destruirArbol(&original);                 // Ya no se necesita el árbol original
+    destruirArbol(&original);
 }
 
 
@@ -54,6 +54,19 @@ void construirCodificado(tArbol *arbol, char *palabra) {
 
     insertar(arbol, der, izq, raiz);
 }
+
+void decodificarPalabra(tArbol *arbol, char *palabra) {
+    tArbol arbolCodificado;
+    crearArbolVacio(&arbolCodificado);
+
+    construirDecodificado(&arbolCodificado, palabra);
+
+    construirEspejo(arbolCodificado, arbol);
+
+
+    destruirArbol(&arbolCodificado);
+}
+
 void construirDecodificado(tArbol *arbol, char *palabra) {
     int len = strlen(palabra);
     crearArbolVacio(arbol);
@@ -70,7 +83,7 @@ void construirDecodificado(tArbol *arbol, char *palabra) {
 
     char *resto = palabra + 1;
     int lenResto = len - 1;
-    int mitad = (lenResto + 1) / 2;  // ahora la primera mitad es la más larga
+    int mitad = (lenResto + 1) / 2;
 
     int lenIzq = mitad;
     int lenDer = lenResto - mitad;
@@ -90,19 +103,6 @@ void construirDecodificado(tArbol *arbol, char *palabra) {
 
     insertar(arbol, der, izq, raiz);
 }
-
-void decodificarPalabra(tArbol *arbol, char *palabra) {
-    tArbol arbolCodificado;
-    crearArbolVacio(&arbolCodificado);
-
-    construirDecodificado(&arbolCodificado, palabra);  // construye árbol desde palabra codificada
-
-    construirEspejo(arbolCodificado, arbol);  // el espejo es el árbol original y lo guardamos en *arbol
-
-
-    destruirArbol(&arbolCodificado);
-}
-
 
 
 void crearArbolVacio(tArbol *arbol) {

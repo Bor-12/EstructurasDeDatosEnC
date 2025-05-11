@@ -1,0 +1,519 @@
+EJERCICIOS ARBOLES
+EJERCICIO 1
+Fijar el árbol binario cuyos recorridos en preorden e inorden
+son las secuencias siguientes:
+* Preorden: L D A Y G K M S Q Z
+* Inorden: A D G Y K L M Q S Z
+
+             L
+           /   \
+         D       M
+       /   \       \
+     A     Y        S
+          / \      / \
+         G   K    Q   Z
+
+  
+
+   
+EJERCICIO 2
+
+Represente gráficamente el árbol binario de búsqueda cuyos
+recorridos en preorden e inorden son las secuencias
+siguientes:
+* Preorden: 10, 3, 1, 5, 4, 8, 16, 20, 17, 21
+* Inorden: 1, 3, 4, 5, 8, 10, 16, 17, 20, 21
+
+	     10
+           /   \
+         3      16
+       /   \      \
+      1    5       20
+          / \     / \
+         4   8   17  21
+
+A continuación, indicar cómo quedaría el árbol si se borra el
+nodo con clave 3. Describir el proceso de borrado de dicho
+nodo.
+Si se borra el nodo 3:
+         10
+        /   \
+      4      16
+     / \       \
+    1   5       20
+         \     / \
+          8   17  21
+Implementacion:
+typedef  struct Nodo{
+    struct Nodo *izquierda;
+    struct Nodo *derecha;
+    tElemento elemento;
+}tNodo;
+
+minimo(tArbol arbol, tElemento *elemento){
+	if(arbol != NULL){
+		tNodo *aux = arbol;
+		while (aux -> izquierda != NULL){
+			aux = aux -> izquierda;
+		}
+		asignarElemento(elemento, aux -> elemento);
+	}
+	
+	
+}
+void eliminarElemento(tArbol* arbol, tElemento elemento) {
+    tNodo *aux;
+    if (*arbol != NULL) {
+
+        if (esIgual((*arbol)->elemento, elemento)) {
+
+            aux = *arbol;
+
+            if ((*arbol)->izquierda == NULL) {
+                // Caso 1: El nodo actual no tiene hijo izquierdo
+                *arbol = (*arbol)->derecha;
+                free(aux);
+            } else if ((*arbol)->derecha == NULL) {
+                // Caso 2: El nodo actual no tiene hijo derecho
+                *arbol = (*arbol)->izquierda;
+                free(aux);
+            } else {
+                // Caso 3: El nodo tiene ambos hijos
+                tElemento min;
+                minimo((*arbol)->derecha, &min);
+                asignarElemento(&(*arbol)->elemento, min);
+                eliminarElemento(&(*arbol)->derecha, min);
+            }
+
+        } else if (!esMenor(elemento, (*arbol)->elemento)) {
+            eliminarElemento(&(*arbol)->derecha, elemento);
+        } else {
+            eliminarElemento(&(*arbol)->izquierda, elemento);
+        }
+    }
+}
+
+
+EJERCICIO 3
+a) Construir el árbol binario de búsqueda para la
+siguiente secuencia de elementos:
+[3,24,25,14,47,34,11,0,-2,40,20,7,5,-6]
+	     3
+           /   \
+         0      24
+       /      /    \
+     -2     14     25
+    /      /   \      \
+  -6     11   20     47
+         /          /
+        7         34
+       /             \
+      5              40
+
+b) Eliminar, del árbol anterior, las siguientes claves:
+[47,40,14,24,34]
+
+Tras eliminar el 47
+	     3
+           /   \
+         0      24
+       /      /    \
+     -2     14     25
+    /      /   \      \
+  -6     11   20      34
+         /             \
+        7         	 40
+       /             
+      5     
+Tras eliminar el 40
+
+
+	     3
+           /   \
+         0      24
+       /      /    \
+     -2     14     25
+    /      /   \      \
+  -6     11   20      34
+         /             
+        7         	 
+       /             
+      5  
+Tras eliminar el 14
+
+
+	     3
+           /   \
+         0      24
+       /      /    \
+     -2      20     25
+    /      /         \
+  -6     11           34
+         /             
+        7         	 
+       /             
+      5    
+Tras eliminar el 24
+
+
+	     3
+           /   \
+         0      25
+       /      /    \
+     -2      20     34
+    /      /         
+  -6     11           
+         /             
+        7         	 
+       /             
+      5    
+Tras eliminar el 34
+
+
+	     3
+           /   \
+         0      25
+       /      /    
+     -2      20     
+    /      /         
+  -6     11           
+         /             
+        7         	 
+       /             
+      5          
+
+
+EJERCICIO 4
+Se tiene un árbol binario de búsqueda estático simulando
+memoria dinámica en un array con la siguiente disposición
+inicial:
+
+Posición:    1     2      3     4     5     6     7     8      9     10
+Elemento:   Ana  Pedro  Cesar Mario Julia Eva  Víctor Raquel  Zoe   Jose
+Izquierda:   0     1      3     5     1     3     0      0      0     0
+Derecha:     0     3      6     7     0     8     9      1      0     0
+cabArbol = 4
+cabVacios = 2 
+
+a) Definir los tipos de datos y los TADs necesarios para
+resolver el problema que se plantea. Supóngase el
+tElemento de tipo string. ¿Cuántas hojas tiene el árbol
+en la situación inicial?, ¿por qué?
+
+
+#define DIMENSION 11
+#define NULO 0 
+typedef char tElemento[50];  
+typedef struct {
+    int izquierda;
+    int derecha; 
+    tElemento elemento;
+} tNodo;
+ 
+
+typedef struct {
+    tNodo nodos[DIMENSION];  // Usamos índices desde 1 a 10
+    int cabArbol;    // posición de la raíz (4)
+    int cabVacios;   // posición del primer hueco (2)
+} tArbol;
+ARBOL:
+Creamos el arbol fijandonos en: 
+-Primero en la raiz del arbol que es la cabidad 4 (Mario), y despues nos fijamos en sus posiciones , si la posicion es 0 significa que es nulo
+por lo tanto si se puede llegar desde la raiz y sus posiciones izquierda y derechason 0 es una hoja del arbol
+Dibujamos el arbol primero:
+
+	    Mario	 
+          /      \
+        Julia    Víctor    
+        /            \
+       Ana           Zoe
+
+Las hojas son Ana y Zoe :)   
+
+b) Devolver la secuencia de nombres que daría el
+recorrido preorden después de insertar el elemento
+“Ana”.
+Se insertarar en la posicion libre, que es la cabidad 2, el arbol al ser de busqueda ana se insertara a la izquierda del todo quedandonos el arbol de la siguiente forma:
+            Mario	 
+          /      \
+        Julia    Víctor    
+        /            \
+       Ana           Zoe    
+      /
+   Ana        
+El preorden seria: Mario, Julia, Ana, Ana, Víctor, Zoe
+
+
+       
+EJERCICIO 5
+Se pide un subprograma que sea capaz de sumar el valor de
+todos los nodos de un árbol binario. Se dispone de la siguiente
+función en el tElemento:
+typedef struct Nodo{
+	struct Nodo *izquierda;
+	struct Nodo *derecha;
+	tElemento elemento;
+}tNodo;
+typedef tNodo *tArbol;
+int Valor(tElemento e);
+int sumar(tArbol arbol){
+	int resultado = 0;
+	if(!esArbolVacio(arbol)){
+		resultado += valor(arbol -> elemento) + sumar(arbol -> derecha) + sumar(arbol -> izquierda);
+	}
+	return resultado;
+}
+
+EJERCICIO 6
+Haciendo uso del TAD ÁrbolBinario y el TAD Lista vistos en clase,
+implemente el subprograma PadresNoAbuelos que dado un
+árbol binario devuelva una lista con los elementos que
+pertenecen a los nodos del árbol que sean padres, pero no
+abuelos. Asumimos que se dispone de la implementación de la
+función esHoja, que recibe un árbol y devuelve 0 si no es hoja
+y 1 si es nodo hoja. Se entiende que el tipo base del arbol binario
+y de la lista es el mismo tElemento.
+
+typedef struct Nodo{
+	struct Nodo *izquierda;
+	struct Nodo *derecha;
+	tElemento elemento;
+}tNodo;
+typedef tNodo *tArbol;
+
+tLista padresNoAbuelos(tArbol arbol) {
+	tLista lista;
+	crearListaVacia(&lista);
+
+	if (!arbolVacio(arbol)) {
+		tLista listaIzq = padresNoAbuelos(arbol->izquierda);
+		tLista listaDer = padresNoAbuelos(arbol->derecha);
+		concatenar(&lista, listaIzq, listaDer);
+
+		
+		int tieneHijoIzq = arbol->izquierda != NULL;
+		int tieneHijoDer = arbol->derecha != NULL;
+		if (tieneHijoIzq || tieneHijoDer) {
+
+			// Verificamos si todos los hijos existentes son hojas
+			int hijoIzqEsHoja = (!tieneHijoIzq || esHoja(arbol->izquierda));
+			int hijoDerEsHoja = (!tieneHijoDer || esHoja(arbol->derecha));
+
+			if (hijoIzqEsHoja && hijoDerEsHoja) {
+				insertar(&lista, arbol->elemento);
+			}
+		}
+	}
+
+	return lista;
+}
+
+
+
+EJERCICIO 7
+
+Considere las siguientes especificaciones algebraicas de operaciones sobre árboles
+¿qué operaciones son Misterio y Misterio2? Explique su respuesta
+OPERACIONES
+Misterio: TipoArbolBin -> TipoLista
+Misterio2: TipoArbolBin -> TipoLista
+…
+ECUACIONES
+Misterio(CrearArbolBinVacio) = CrearVacia
+Misterio(ConstruirArbolBin(i, r, d)) = SI EsArbolBinVacio(i) Y EsArbolBinVacio(d) →
+ Construir(r, CrearVacia)
+| Concatenar(Misterio(i), Misterio(d)).
+Misterio2(CrearArbolBinVacio) = CrearVacia
+Misterio2(ConstruirArbolBin(i, r, d)) = InsertarFinal(r, Concatenar(Misterio2(i),
+Misterio2(d)))
+
+Misterio es una función que recorre el árbol y devuelve una lista de los nodos hoja, es decir, aquellos que no tienen hijos ni por la izquierda ni por la derecha.
+Misterio2 es una función que devuelve una lista con los elementos del árbol en recorrido postorden, es decir, primero el subárbol izquierdo, luego el derecho, y por último la raíz.
+
+EJERCICIO 8
+
+Dada la pertinaz sequía que sufrimos actualmente, se desea tener control de la
+cantidad de agua que tienen los embalses en nuestro país, para tomar medidas
+respecto al riego y consumo humano. Será necesario consultar con frecuencia el
+porcentaje de capacidad de un determinado embalse para poder tomar las decisiones
+oportunas.
+Para cada embalse se guardará la siguiente información: nombre del embalse,
+capacidad total y % de agua existente respecto a su capacidad total y se dispone una
+interfaz con las siguientes operaciones:
+char *GetNombre(tEmbalse e);
+float GetCapacidad(tEmbalse e);
+float GetPorcentaje(tEmbalse e);
+Se pide:
+
+a) Definir en C una estructura que guarde la información antes mencionada sobre los
+embalses y que facilite la búsqueda de información sobre el estado de cualquiera de
+ellos.
+
+typedef struct {
+    char nombre[50];
+    float capacidadTotal;
+    float porcentajeActual;
+} tEmbalse;
+// Árbol binario de búsqueda ordenado por nombre de embalse, 
+// ya que lo que se consulta con frecuencia es el estado de un embalse concreto por su nombre.
+
+
+typedef struct Nodo{
+	struct Nodo *izquierda;
+	struct Nodo *derecha;
+	tEmbalse embalse;
+}tNodo;
+typedef tNodo *tArbol;
+
+b) Desarrollar en C una función que indique el porcentaje de agua de un determinado
+embalse. Esta función recibirá como parámetros la estructura que almacena la
+información de todos los embalses y el nombre del embalse (cadena de caracteres)
+del que se desea conocer su situación. El subprograma devolverá el porcentaje de
+agua existente.
+float porcentajeActualEmbalse(tArbol arbol, char *nombre){
+	float porcentaje = -1;
+	if(!esArbolVacio(arbol)){
+		if (strcmp(nombre, GetNombre( arbol -> embalse)) == 0){
+			porcentaje = GetPorcentaje(arbol -> embalse);
+		}else if(strcmp(nombre, GetNombre( arbol -> embalse)) < 0){
+			return porcentajeActualEmbalse(arbol -> izquierda, nombre);
+		}else
+			return porcentajeActualEmbalse(arbol -> derecho, nombre);
+	}
+	return porcentaje;
+}
+
+c) ¿Qué complejidad tiene la operación del apartado b)? Justifique su respuesta.
+La operación del apartado b) consiste en buscar un embalse por su nombre en un árbol binario de búsqueda (ABB) ordenado por nombre.
+
+En el mejor caso, si el árbol está balanceado, la búsqueda descarta la mitad del árbol en cada paso, por lo que la complejidad es:
+
+O(log n)
+
+Sin embargo, en el peor caso, si el árbol está desequilibrado (por ejemplo, si se insertan los elementos en orden alfabético), 
+se comporta como una lista enlazada. En ese caso, se recorren todos los nodos hasta encontrar el deseado, por lo que la complejidad es:
+
+O(n)
+
+
+
+
+
+EJERCICIO 9
+Se desea crear un sistema rápido para catalogar por edades novelas y conocer si
+son adecuadas para público infantil, mayores de 13 años o adultos, teniendo en
+cuenta una lista “negra” de palabras. Para ello se hace un análisis de las novelas,
+dependiendo de las palabras utilizadas y su frecuencia de aparición. El sistema
+recibe como entrada un fichero de texto ASCII con la novela, con posiblemente
+varios miles de palabras, y se organizan en memoria las palabras que contiene y sus
+frecuencias. Por ejemplo, con el texto "hola, adios, hola casa perro casita perro
+domingo", en memoria se guardarían las palabras y su frecuencia, y la salida
+ordenada alfabéticamente sería la siguiente:
+	adios 1
+	casa 1
+	casita 1
+	domingo 1
+	hola 2
+	perro 2
+Se proporciona la operación ReadText que, dado el nombre del fichero de texto,
+devuelve un array sin orden con las palabras que contiene (un máximo de 20000
+palabras, sin tener en cuenta signos de puntuación y otros caracteres que no
+formen parte de las palabras) y un valor con el número de palabras devueltas en el
+array:
+Typedef char tWords[20000];
+void ReadText(char *filename, twords *words, int *n);
+
+A) Decidir qué estructura de datos de las estudiadas a lo largo del
+curso puede ser la más adecuada para resolver el problema para
+hacer comprobaciones rápidas de la existencia de palabras que un
+comité considera que no deben aparecer en novelas infantiles,
+aparecer poco en novelas para mayores de 13 años o que no
+importa que aparezcan en las novelas para adultos. Justificar la
+respuesta y definir los tipos necesarios.
+// Árbol binario ordenado por el numero de palabras
+#define MAX_WORD_LEN 100
+
+typedef struct Nodo{
+	char palabra[MAX_WORD_LEN];
+	int frecuencia;
+	struct Nodo *izquierda;
+	struct Nodo *derecha;
+} tNodo;
+
+typedef tNodo* tArbol;
+
+typedef tNodo *tArbol;
+
+
+B) Implementar las operaciones necesarias para hacer la carga de las
+palabras y su frecuencia, y luego mostrar el resultado por pantalla
+en orden alfabético. Asúmase accesible, ReadText.
+void insertarPalabra(tArbol *arbol, char *palabra) {
+    if (*arbol == NULL) {
+        tNodo *nuevo = (tNodo *)malloc(sizeof(tNodo));
+        strcpy(nuevo->palabra, palabra);
+        nuevo->frecuencia = 1;
+        nuevo->izquierda = NULL;
+        nuevo->derecha = NULL;
+        *arbol = nuevo;
+    } else {
+        int cmp = strcmp(palabra, (*arbol)->palabra);
+        if (cmp == 0) {
+            (*arbol)->frecuencia++;
+        } else if (cmp < 0) {
+            insertarPalabra(&(*arbol)->izquierda, palabra);
+        } else {
+            insertarPalabra(&(*arbol)->derecha, palabra);
+        }
+    }
+}
+
+void cargarArbolDesdeArchivo(tArbol *arbol, char *nombreArchivo) {
+    tWords palabras;
+    int cantidad;
+    ReadText(nombreArchivo, palabras, &cantidad);
+
+    for (int i = 0; i < cantidad; i++) {
+        insertarPalabra(arbol, palabras[i]);
+    }
+}
+
+
+
+C) Dada una lista negra de palabras desordenadas en una variable
+tWords del tipo anteriormente definido y una variable entera que
+describe el número de palabras que contiene la lista negra, mostrar
+en pantalla las palabras de la lista negra y el número de apariciones
+que tiene una novela cuya información se ha cargado en una
+estructura de datos creada en los apartados anteriores.
+
+int buscarFrecuencia(tArbol arbol, char *palabra) {
+    if (arbol == NULL)
+        return 0;
+
+    int cmp = strcmp(palabra, arbol->palabra);
+    if (cmp == 0)
+        return arbol->frecuencia;
+    else if (cmp < 0)
+        return buscarFrecuencia(arbol->izquierda, palabra);
+    else
+        return buscarFrecuencia(arbol->derecha, palabra);
+}
+void mostrarListaNegra(tWords listaNegra, int n, tArbol arbol) {
+    printf("\n--- Lista negra ---\n");
+    for (int i = 0; i < n; i++) {
+        int freq = buscarFrecuencia(arbol, listaNegra[i]);
+        printf("%s: %d apariciones\n", listaNegra[i], freq);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

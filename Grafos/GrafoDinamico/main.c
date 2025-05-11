@@ -14,10 +14,10 @@ int main() {
     insertarVertice(&grafo, v4);
     insertarVertice(&grafo, v5);
 
-    insertarConexion(&grafo, v1, v2);
-    insertarConexion(&grafo, v2, v3);
-    insertarConexion(&grafo, v1, v4);
-    insertarConexion(&grafo, v3, v5);
+    insertarConexion(&grafo, v1, v2, 10);
+    insertarConexion(&grafo, v2, v3, 5);
+    insertarConexion(&grafo, v1, v4, 3);
+    insertarConexion(&grafo, v3, v5, 7);
 
     printf("Vertices del grafo:\n");
     mostrarVerticesGrafo(grafo);

@@ -34,9 +34,7 @@ void mostrarElemento(tElemento e) {
 int esGratis(tElemento e) {
     return e.precio == 0.0f;
 }
-#include "tElemento.h"
-#include <stdio.h>
-#include <string.h>
+
 
 void leerElemento(tElemento *e) {
     getchar();  // Limpia el buffer antes de leer cadenas

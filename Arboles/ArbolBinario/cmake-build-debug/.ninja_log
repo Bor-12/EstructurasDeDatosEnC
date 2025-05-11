@@ -1,12 +1,17 @@
 # ninja log v6
-2	219	7647307158212335	build.ninja	8523fff9e4b2d6a9
-16	63	7647307000200321	CMakeFiles/ArbolBinario.dir/main.c.obj	90836823b2c39a15
-18	66	7647307000210291	CMakeFiles/ArbolBinario.dir/tElemento.c.obj	8667370116c03456
-66	131	7647307000698990	ArbolBinario.exe	f7db635c97a43c9b
-101	569	7649671304457288	CMakeFiles/ArbolBinario.dir/ArbolBinario.c.obj	189dab50b4db2c4b
-2	82	7649671984506886	CMakeFiles/ArbolBinario.dir/main.c.obj	90836823b2c39a15
-82	554	7649671985304897	ArbolBinario.exe	fa38a19a9004c38f
-13	59	7649672829933657	CMakeFiles/ArbolBinario.dir/main.c.obj	90836823b2c39a15
-59	120	7649672830389251	ArbolBinario.exe	fa38a19a9004c38f
+2	219	7660896316714749	build.ninja	8523fff9e4b2d6a9
 13	81	7649674318648438	CMakeFiles/ArbolBinario.dir/main.c.obj	90836823b2c39a15
+18	66	7647307000210291	CMakeFiles/ArbolBinario.dir/tElemento.c.obj	8667370116c03456
 81	143	7649674319337996	ArbolBinario.exe	fa38a19a9004c38f
+101	569	7649671304457288	CMakeFiles/ArbolBinario.dir/ArbolBinario.c.obj	189dab50b4db2c4b
+13	65	7660896384369906	CMakeFiles/ArbolBinario.dir/main.c.obj	136b5d6fc446ad0d
+16	67	7660896384399827	CMakeFiles/ArbolBinario.dir/tElemento.c.obj	c6ba77384159afb5
+18	77	7660896384419776	CMakeFiles/ArbolBinario.dir/ArbolBinario.c.obj	6428502df1e318e3
+77	207	7660896385008206	ArbolBinario.exe	fa38a19a9004c38f
+18	79	7660910757618188	CMakeFiles/ArbolBinario.dir/ArbolBinario.c.obj	6428502df1e318e3
+13	61	7660911396203064	CMakeFiles/ArbolBinario.dir/main.c.obj	136b5d6fc446ad0d
+17	73	7660911396242968	CMakeFiles/ArbolBinario.dir/ArbolBinario.c.obj	6428502df1e318e3
+15	62	7660911652467703	CMakeFiles/ArbolBinario.dir/tElemento.c.obj	c6ba77384159afb5
+13	63	7660911652437782	CMakeFiles/ArbolBinario.dir/main.c.obj	136b5d6fc446ad0d
+17	77	7660911652487657	CMakeFiles/ArbolBinario.dir/ArbolBinario.c.obj	6428502df1e318e3
+77	145	7660911653076090	ArbolBinario.exe	fa38a19a9004c38f

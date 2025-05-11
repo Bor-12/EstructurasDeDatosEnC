@@ -1,0 +1,141 @@
+Durante todos los ejercicios utilizo los siguientes TADs:
+typedef struct NodoLista{
+	struct NodoLista *siguiente;
+	tElemento elemento;
+}tNodoLista;
+typedef tNodoLista *tLista;
+
+typedef struct Nodo{
+	struct Nodo *izquierdo;
+	struct Nodo *derecho;
+	tElemento elemento;
+}tNodo;
+typedef tNodo *tArbol;
+
+Nodos Izquierdos
+
+Implementa una función en el TADArbolBinario para que, dado un árbol de este tipo, te
+devuelta una lista (no importa el orden) con los elementos del árbol que son hijos izquierdos de
+un nodo cualquiera del mismo. Como pequeña pista para la realización del ejercicio recordad
+que, aunque la función que aparece en el .h tiene que tener una determinada interfaz (la que
+aparece en el proyecto facilitado para realizar el examen) luego, en el .c, se pueden definir
+funciones auxiliares privadas (ya no aparecen en el .h) que ayuden a implementar esta función
+inicial. En el siguiente ejemplo se puede ver un árbol binario y la ejecución del método sobre
+dicho árbol, donde los nodos izquierdos son aquellos resaltados con un trazo más grueso. Este
+árbol de la imagen es el que se proporciona en el proyecto del examen, para que el alumno
+pueda probar su implementación con él. No obstante, se recomienda modificarlo para poder
+probar su función con otros ejemplos.
+int esArbolVacio(tArbol arbol){
+	return arbol == NULL;
+}
+tLista nodosIzquierdos(tArbol arbol){
+	tLista lista;
+	crearListaVacia(&lista);
+	if(!esArbolVacio(arbol)){
+		tLista listaIzquierda = nodosIzquierdos(arbol -> izquierdo);
+		tLista listaDerecha = nodosIzquierdos(arbol -> derecho);
+		concatenar(&lista, listaIzquierda, listaDerecha);
+		if(arbol -> izquierda != NULL){
+			insertar(&lista, arbol -> izquierdo -> elemento);
+		}
+	}
+	return lista;
+}
+
+Nodos Abuelos
+Implementa una función en el TADArbolBinario para que, dado un árbol de este tipo, te
+devuelta una lista con los elementos del árbol que son abuelos junto al número de nietos. En
+este caso el orden de los elementos a mostrar tiene que ser por niveles y, dentro de estos, de
+izquierda a derecha. En el siguiente ejemplo se puede ver un árbol binario y la ejecución del
+método sobre dicho árbol, donde los nodos abuelos son aquellos resaltados con un trazo más
+grueso. Este árbol de la imagen es el que se proporciona en el proyecto del examen, para que el
+alumno pueda probar su implementación con él. No obstante, se recomienda modificarlo para
+poder probar su función con otros ejemplos. Como pequeña ayuda para la realización del
+ejercicio se incluye un segundo tipo de lista y de elemento en la carpeta del proyecto. Modifica
+este segundo tipo de elemento si lo ves necesario para resolver el problema.
+
+
+ahora la lista tambien guarda el nivel del nodo del arbol
+typedef struct NodoLista{
+	struct NodoLista *siguiente;
+	tElemento elemento;
+	int nivel;
+}tNodoLista;
+typedef tNodoLista *tLista; 
+Suponemos tambien una funcion nueva de la lista:
+void insertarConNivel(tLista *lista, tElemento elem, int nivel);
+ 
+int contarNietos(tArbol hijo) {
+    if (hijo == NULL) return 0;
+    int nietos = 0;
+
+    if (hijo->izquierda != NULL) nietos++;
+    if (hijo->derecha != NULL) nietos++;
+
+    return nietos;
+}
+
+void nodosAbuelosRec(tArbol arbol, int nivel, tLista *lista) {
+    if (arbol == NULL) return;
+
+    int numNietos = 0;
+
+    // Si el nodo actual tiene hijos
+    if (arbol->izquierda != NULL)
+        numNietos += contarNietos(arbol->izquierda);
+    if (arbol->derecha != NULL)
+        numNietos += contarNietos(arbol->derecha);
+
+    if (numNietos > 0) {
+        // Es un abuelo, lo insertamos con su nivel
+        tElemento abuelo = arbol->elemento;
+        insertarConNivel(lista, abuelo, nivel); 
+    }
+
+    // Recorremos recursivamente
+    nodosAbuelosRec(arbol->izquierda, nivel + 1, lista);
+    nodosAbuelosRec(arbol->derecha, nivel + 1, lista);
+}
+
+tLista nodosAbuelos(tArbol arbol) {
+    tLista lista;
+    crearListaVacia(&lista);
+
+    nodosAbuelosRec(arbol, 1, &lista);
+
+    return lista;
+}
+Implementa en el TADArbol que se te proporciona junto a este enunciado la función
+ascendientes, que recibe un puntero a un árbol y a un elemento (que puede o no estar en
+el árbol) y nos devuelve una lista con los nodos que hay desde la raíz hasta el nodo en cuestión.
+En caso de que el nodo no se encuentre en el árbol, devolverá una lista vacía.
+void ascendientes (TBinarySearchTree a, TElemento e, TLista* r);
+
+// supongo que es un arbol ordenado
+void ascendientes(tArbol arbol, TElemento e, tLista* lista) {
+    crearListaVacia(lista);
+
+    tLista aux;
+    crearListaVacia(&aux);
+
+    tArbol actual = arbol;
+    int encontrado = 0;
+
+    while (actual != NULL && !encontrado) {
+        insertarFinal(&aux, actual->elem);  // Añadir al camino
+
+        if (actual->elem == e) {
+            encontrado = 1;
+        } else if (e < actual->elem) {
+            actual = actual->izq;
+        } else {
+            actual = actual->der;
+        }
+    }
+
+    if (encontrado) {
+        *lista = aux;  
+    } else {
+        destruirLista(&aux);  
+    }
+}
